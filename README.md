@@ -100,11 +100,11 @@ Version control is essential in DevOps because it allows teams to work on the sa
 
 Containers are a way to package software so that it can be run on any environment. Containers include all of the dependencies that the software needs to run, such as code, libraries, and runtime environments.
 
-Containers are popular in DevOps because they make it easy to deploy and manage software. Containers can be deployed to any environment that supports Docker, which is a popular container orchestration platform.
+Containers are popular in DevOps because they make it easy to deploy and manage software. Containers can be deployed to any environment that supports a container runtime such as Docker, and they can be managed at scale with orchestration platforms like Kubernetes.
 
 ### Explain Infrastructure as Code (IaC).
 
-Infrastructure as Code (IaC) is a practice of managing infrastructure using code. IaC tools allow you to define your infrastructure as code, which can then be automatically provisioned and deployed.
+Infrastructure as Code (IaC) is the practice of managing and provisioning infrastructure through machine-readable definition files, rather than through manual processes and interactive configuration tools.
 
 IaC is popular in DevOps because it makes it easy to automate the deployment of infrastructure. It also helps to ensure that infrastructure is consistent and reproducible.
 
@@ -501,7 +501,7 @@ Service meshes are important in microservices architectures because they help to
 
 Continuous Integration (CI) is the practice of integrating changes to code into a shared repository frequently.
 
-Continuous Delivery (CD) is the practice of automating the delivery of code changes to production.
+Continuous Delivery (CD) is the practice of automatically preparing code changes for release, so that every build is deployable to production at any time.
 
 Continuous Deployment (CD) is the practice of automatically deploying code changes to production whenever a change passes CI and CD checks.
 
@@ -513,13 +513,13 @@ Another approach is to use a feature flag management tool to control when databa
 
 ### What is a "Rolling Deployment" strategy, and what are its advantages?
 
-A rolling deployment is a deployment strategy where changes to an application are deployed to a subset of users at a time. Once the changes have been deployed to the subset of users and the changes have been verified, the changes are deployed to the remaining users.
+A rolling deployment is a deployment strategy where an application is updated incrementally, replacing old instances with new ones in small batches. Once each batch is verified healthy, the next batch is updated until all instances run the new version.
 
 Rolling deployments have a number of advantages, including:
 
 * Reduced risk: Rolling deployments reduce the risk of deployment failures by deploying changes to a subset of users at a time.
 * Gradual rollout: Rolling deployments allow you to gradually roll out changes to all users, which can help to reduce the impact of changes on users.
-* Blue-green deployments: Rolling deployments can be used to implement blue-green deployments, which are a type of deployment that allows you to deploy changes to a new environment and then switch traffic from the old environment to the new environment without any downtime.
+* Lower infrastructure cost: Rolling deployments update the existing environment in place, so unlike a blue-green deployment they do not require a second, full-size environment.
 
 ### How do you handle data migration in a DevOps environment?
 
