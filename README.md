@@ -169,7 +169,7 @@ The purpose of the DevOps toolchain is to automate the software development and 
 Some popular DevOps tools include:
 
 * **Code building and testing:** Jenkins, Travis CI, CircleCI
-* **Deployment:** Ansible, Chef, Puppet
+* **Deployment and configuration:** Ansible, Chef, Puppet, Argo CD
 * **Monitoring:** Prometheus, Grafana, Datadog
 
 ### Explain the concept of "Immutable Infrastructure" and its benefits in DevOps.
@@ -245,12 +245,12 @@ Jenkins and Travis CI are both continuous integration (CI) tools, but they have 
 
 * Cloud-based
 * Easy to use
-* Good for open source projects
 * Limited customization options
+* Largely legacy today: free open-source builds ended in 2021, and many projects have moved to GitHub Actions
 
-### Which CI tool is better for you depends on your specific needs.
+Which CI tool is better for you depends on your specific needs.
 
-If you need a highly customizable CI tool that you can self-host, then Jenkins is a good choice. If you are looking for a cloud-based CI tool that is easy to use, then Travis CI is a good choice.
+If you need a highly customizable CI tool that you can self-host, then Jenkins is a good choice. If you are looking for a cloud-based CI tool that is easy to use, then Travis CI is an option, although most new projects start with GitHub Actions or GitLab CI.
 
 ### Explain the importance of container orchestration tools like Kubernetes in DevOps.
 
@@ -487,9 +487,9 @@ Dependency management can be achieved by using tools such as dependency managers
 
 ### How do you implement "Infrastructure as Code" for serverless architectures?
 
-There are a number of ways to implement Infrastructure as Code (IaC) for serverless architectures. One approach is to use a cloud platform that offers serverless computing capabilities. For example, AWS Lambda, Google Cloud Functions, and Azure Functions all offer IaC capabilities for serverless architectures.
+There are a number of ways to implement Infrastructure as Code (IaC) for serverless architectures. One approach is to use the cloud provider's dedicated tooling, such as AWS SAM or the AWS CDK for AWS Lambda, and Azure Bicep or ARM templates for Azure Functions.
 
-Another approach is to use a third-party IaC tool. For example, Terraform and Serverless Framework are both popular IaC tools that can be used to manage serverless architectures.
+Another approach is to use a third-party IaC tool. For example, Terraform, Pulumi, and the Serverless Framework are all popular tools that can define and manage serverless architectures.
 
 ### What is the role of "Service Mesh" in microservices architectures?
 
@@ -523,7 +523,7 @@ Rolling deployments have a number of advantages, including:
 
 ### How do you handle data migration in a DevOps environment?
 
-There are a number of ways to handle data migration in a DevOps environment. One approach is to use a data migration tool. For example, AWS Database Migration Service and Google Cloud SQL Data Migration Service are both popular data migration tools that can be used to migrate data between databases.
+There are a number of ways to handle data migration in a DevOps environment. One approach is to use a data migration tool. For example, AWS Database Migration Service and Google Cloud Database Migration Service are both popular data migration tools that can be used to migrate data between databases.
 
 Another approach is to use a custom data migration script. This approach can be more flexible, but it also requires more development work.
 
