@@ -1,12 +1,12 @@
-# Questions and answers to help you prepare for a job interview for the position of DevOps Engineer (2026)
+# DevOps Engineering Playbook (2026): CI/CD, Infrastructure as Code and Platform Practices
 
-This project repository contains a collection of questions and answers for DevOps interviews. The questions are based on common DevOps concepts, tools, and technologies. The answers are comprehensive and informative, and they are written in a clear and concise style.
+This DevOps engineering playbook is a practical collection of Q&A-style entries on CI/CD, infrastructure automation, containers and Kubernetes, GitOps, observability and supply-chain security. It is written for engineers who build delivery pipelines, infrastructure automation and internal platforms.
 
-The purpose of this repository is to provide a valuable resource for anyone who is preparing for a DevOps interview. The questions and answers in this repository can help you to:
+Each entry answers a common DevOps question with comprehensive, informative and concise guidance, written in a clear and practical style. The purpose of this repository is to serve as a working reference for engineers who need to:
 
 * Understand the key concepts of DevOps
-* Learn about the most popular DevOps tools and technologies
-* Practice answering common DevOps interview questions
+* Learn about widely used DevOps tools and technologies
+* Apply proven practices when designing pipelines and platforms
 
 ## Table of Contents
 
