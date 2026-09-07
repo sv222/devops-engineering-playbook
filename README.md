@@ -136,6 +136,8 @@ Some best practices for security in a DevOps pipeline include:
 
 - Scan code for vulnerabilities: Use code scanning tools to identify and fix security vulnerabilities in your code.
 - Use secure containers: Use container security tools to scan and secure your containers.
+- **Secure the software supply chain:** Generate a software bill of materials (SBOM) for each build, sign artifacts and container images (for example with Sigstore cosign), and record build provenance that meets a SLSA level so you can verify what you deploy.
+- **Avoid long-lived credentials:** Prefer short-lived credentials, such as OIDC federation from the CI system to the cloud provider, over static keys stored as CI secrets.
 - Use a secure infrastructure: Deploy your applications to a secure infrastructure, such as a cloud platform that offers security features such as encryption and access control.
 - Educate your team: Educate your team about security best practices and how to implement them in the DevOps pipeline.
 
@@ -295,6 +297,9 @@ There are a number of ways to ensure the security of Docker containers in a DevO
 - **Use a secure container registry:** A secure container registry can help to ensure that your Docker containers are built from secure images.
 - **Scan container images for vulnerabilities:** Use a container security scanner to scan your container images for vulnerabilities before you deploy them.
 - **Use a secure container orchestration platform:** A secure container orchestration platform can help you to deploy and manage your Docker containers in a secure way.
+- **Use minimal, pinned base images:** Prefer minimal base images, pin them by digest, and run containers as a non-root user with a read-only root filesystem where possible.
+- **Generate an SBOM and sign images:** Produce an SBOM with a tool such as Syft, scan it or the image with a scanner such as Trivy or Grype, sign the image with cosign, and verify signatures at admission time with a Kubernetes policy engine such as Kyverno or OPA Gatekeeper.
+- **Record provenance:** Attach SLSA build provenance attestations to images so consumers can verify where and how an image was built.
 
 ## What is "Canary Deployment," and how does it work in DevOps?
 
@@ -427,15 +432,17 @@ Continuous documentation can be achieved by using tools such as documentation ge
 
 There are a number of ways to manage secrets and sensitive data in a DevOps environment, including:
 
-- **Use a secrets manager:** A secrets manager is a tool that can help you to store and manage secrets securely. Secrets managers can encrypt secrets and restrict access to secrets to authorized users.
+- **Use a secrets manager:** A secrets manager is a tool that can help you to store and manage secrets securely. Examples include HashiCorp Vault (source-available under the Business Source License since 2023; OpenBao is the open-source fork), AWS Secrets Manager, Azure Key Vault and Google Secret Manager. Secrets managers can encrypt secrets and restrict access to secrets to authorized users.
 - **Use a secure container registry:** A secure container registry can help you to store and manage container images securely. Secure container registries can encrypt container images and restrict access to container images to authorized users.
 - **Use a cloud platform with security features:** Many cloud platforms offer security features such as encryption and access control. You can use these features to protect your secrets and sensitive data.
+- **Keep secrets out of Git:** Use secret scanning and pre-commit checks, and store encrypted secrets in Git only with a tool such as SOPS.
+- **Use short-lived credentials:** Prefer OIDC federation and workload identity over static access keys.
 
 ## What are "Immutable Artifacts," and how do they improve deployment reliability in DevOps?
 
 Immutable artifacts are artifacts that cannot be changed once they are created. This includes artifacts such as container images and database schemas.
 
-Immutable artifacts improve deployment reliability in DevOps by reducing the risk of errors caused by changes to artifacts. Immutable artifacts also make it easier to roll back deployments if something goes wrong.
+Immutable artifacts improve deployment reliability in DevOps by reducing the risk of errors caused by changes to artifacts. Immutable artifacts also make it easier to roll back deployments if something goes wrong. Reference container images by digest rather than a mutable tag, and sign them so the exact artifact that passed your pipeline is the one that is deployed.
 
 ## How does "Self-Healing Infrastructure" work in a DevOps environment?
 
@@ -464,6 +471,7 @@ The key principles of continuous compliance are:
 - **Shift-left security:** Conduct security checks early in the development lifecycle to identify and fix security vulnerabilities as soon as possible.
 - **Automate compliance checks:** Use automation tools to automate compliance checks as much as possible.
 - **Monitor compliance continuously:** Continuously monitor compliance requirements and enforce them using automation tools.
+- **Keep evidence as code:** Store policies as code (for example with Open Policy Agent) and keep signed build provenance and SBOMs as audit evidence.
 
 Continuous compliance can help to ensure security in DevOps by identifying and fixing security vulnerabilities early in the development lifecycle and by continuously monitoring and enforcing compliance requirements.
 
@@ -477,7 +485,7 @@ Feature flag management enables controlled feature releases in DevOps applicatio
 
 Dependency management is the process of managing the dependencies of a software application. Dependencies are the components that a software application needs to run.
 
-Dependency management is important in DevOps because it helps to ensure that applications are always running with the correct dependencies. Dependency management can also help to reduce the risk of security vulnerabilities caused by outdated or vulnerable dependencies.
+Dependency management is important in DevOps because it helps to ensure that applications are always running with the correct dependencies. Dependency management can also help to reduce the risk of security vulnerabilities caused by outdated or vulnerable dependencies. Automated update tools such as Dependabot or Renovate keep dependencies current, lockfiles keep builds reproducible, and an SBOM (in SPDX or CycloneDX format) records exactly what shipped.
 
 Dependency management can be achieved by using tools such as dependency managers. Dependency managers can help you to identify, install, and manage the dependencies of your software applications.
 
@@ -580,6 +588,8 @@ There are a number of ways to manage secrets and sensitive data in a containeriz
 - **Use a secrets management tool:** A secrets management tool can help you to store and manage secrets securely. Secrets management tools can encrypt secrets and restrict access to secrets to authorized users.
 - **Use a secure container registry:** A secure container registry can help you to store and manage container images securely. Secure container registries can encrypt container images and restrict access to container images to authorized users.
 - **Use a cloud platform with security features:** Many cloud platforms offer security features such as encryption and access control. You can use these features to protect your secrets and sensitive data.
+- **Use Docker or Compose secrets and BuildKit secret mounts:** Pass secrets at runtime as files via Docker secrets (Swarm) or Compose secrets, and use `RUN --mount=type=secret` at build time instead of `ENV` or `ARG`, which can leak into image layers and history.
+- **On Kubernetes, sync from an external store:** Use a tool such as the External Secrets Operator or the Secrets Store CSI Driver instead of committing Secret manifests.
 
 ## Benefits of Observability in Microservices Architecture
 
