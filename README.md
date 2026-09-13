@@ -108,6 +108,8 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning infras
 
 IaC is popular in DevOps because it makes it easy to automate the deployment of infrastructure. It also helps to ensure that infrastructure is consistent and reproducible.
 
+Common IaC tools include Terraform and OpenTofu, Pulumi, Ansible and cloud-native options such as AWS CloudFormation, AWS CDK and Azure Bicep.
+
 ## What is the role of configuration management in DevOps?
 
 Configuration management is the process of managing the configuration of IT systems. This includes tracking the configuration of systems, making changes to the configuration, and rolling back changes if necessary.
@@ -166,9 +168,9 @@ The purpose of the DevOps toolchain is to automate the software development and 
 
 Some popular DevOps tools include:
 
-- **Code building and testing:** Jenkins, Travis CI, CircleCI
-- **Deployment and configuration:** Ansible, Chef, Puppet, Argo CD
-- **Monitoring:** Prometheus, Grafana, Datadog
+- **Code building and testing:** GitHub Actions, GitLab CI, Jenkins, CircleCI
+- **Deployment and configuration:** Ansible, Chef, Puppet, Terraform or OpenTofu, Argo CD, Flux
+- **Monitoring:** Prometheus, Grafana, OpenTelemetry, Datadog
 
 ## Explain the concept of "Immutable Infrastructure" and its benefits in DevOps.
 
@@ -227,6 +229,8 @@ GitOps differs from traditional infrastructure management in a number of ways. F
 Second, GitOps is more transparent. In traditional infrastructure management, it can be difficult to track the changes that have been made to your infrastructure. In GitOps, all of the changes to your infrastructure are tracked in Git, which makes it easy to see who made what changes and when.
 
 Third, GitOps is more auditable. In traditional infrastructure management, it can be difficult to audit the changes that have been made to your infrastructure. In GitOps, all of the changes to your infrastructure are tracked in Git, which makes it easy to audit who made what changes and when.
+
+Argo CD and Flux are the most widely used GitOps controllers for Kubernetes. They continuously reconcile the cluster with the desired state in Git.
 
 ## What are the key differences between Jenkins and Travis CI?
 
@@ -328,7 +332,7 @@ Canary Deployment is a powerful technique that can help to reduce the risk of de
 ### Tools
 
 - **Monitoring tools:** Tools such as Prometheus and Grafana can be used to monitor the performance and reliability of applications and infrastructure.
-- **Logging tools:** Tools such as Elasticsearch and Kibana can be used to collect and analyze logs from applications and infrastructure.
+- **Logging tools:** Tools such as Grafana Loki, OpenSearch or the Elastic stack can be used to collect and analyze logs from applications and infrastructure.
 - **Alerting tools:** Tools such as PagerDuty and Opsgenie can be used to notify DevOps teams of problems with applications and infrastructure.
 
 ## Benefits of "Feature Toggles" in DevOps development:
@@ -479,7 +483,7 @@ Continuous compliance can help to ensure security in DevOps by identifying and f
 
 Feature flag management is the practice of using feature flags to control when features are released to users. Feature flags are switches that can be used to turn features on and off without deploying new code.
 
-Feature flag management enables controlled feature releases in DevOps applications by allowing developers to release features to a subset of users before releasing them to all users. This can help to reduce the risk of releasing new features and to gather feedback from users before releasing features to all users.
+Feature flag management enables controlled feature releases in DevOps applications by allowing developers to release features to a subset of users before releasing them to all users. This can help to reduce the risk of releasing new features and to gather feedback from users before releasing features to all users. OpenFeature, a CNCF project, defines a vendor-neutral API for feature flags so you can switch flag providers without changing application code.
 
 ## Explain the concept of "Dependency Management" in DevOps.
 
@@ -495,11 +499,15 @@ There are a number of ways to implement Infrastructure as Code (IaC) for serverl
 
 Another approach is to use a third-party IaC tool. For example, Terraform, Pulumi, and the Serverless Framework are all popular tools that can define and manage serverless architectures.
 
+Note that Terraform has been under the HashiCorp Business Source License (BSL) since August 2023 rather than an open-source license. OpenTofu is the open-source fork of Terraform, hosted by the Linux Foundation, and is largely a drop-in replacement for existing Terraform configurations. Check the license terms of your IaC tooling when you choose it.
+
 ## What is the role of "Service Mesh" in microservices architectures?
 
 A service mesh is a layer of infrastructure that sits between microservices and provides them with common services such as load balancing, service discovery, and circuit breakers.
 
 Service meshes are important in microservices architectures because they help to make microservices architectures more reliable and manageable.
+
+Popular meshes include Istio (which offers a sidecar-less ambient mode) and Linkerd; Cilium also provides mesh features using eBPF.
 
 ## What is "Continuous Integration vs. Continuous Delivery vs. Continuous Deployment"?
 
@@ -595,6 +603,8 @@ There are a number of ways to manage secrets and sensitive data in a containeriz
 
 Observability is the ability to collect, analyze, and understand data about the state and behavior of a system. Observability is important in microservices architectures because it can help to troubleshoot problems, identify performance bottlenecks, and improve the overall reliability and performance of the system.
 
+OpenTelemetry (OTel) is the vendor-neutral standard for generating and collecting traces, metrics and logs, and most observability backends accept it.
+
 Some of the benefits of observability in microservices architecture include:
 
 - Improved troubleshooting: Observability can help you to troubleshoot problems in your microservices architecture by providing you with visibility into the state and behavior of your system. For example, if a user is experiencing a problem with your application, you can use observability tools to track the request through your microservices architecture and identify the microservice that is causing the problem.
@@ -622,7 +632,7 @@ CI is an important part of the DevOps lifecycle because it helps to ensure the q
 
 Git Flow is a branching model that can be used to structure the development process in DevOps. Git Flow uses a number of branches to manage different stages of the development process, including development, staging, release, and hotfix branches.
 
-Git Flow is a popular choice for DevOps teams because it helps to streamline the development process and to reduce the risk of conflicts.
+Git Flow is a popular choice for DevOps teams because it helps to streamline the development process and to reduce the risk of conflicts. Git Flow works best for software with scheduled releases; teams that deploy continuously usually prefer trunk-based development with short-lived branches.
 
 ## What Are the Key Considerations for Creating a Disaster Recovery Plan in a DevOps Environment?
 
@@ -638,6 +648,8 @@ There are a number of key considerations for creating a disaster recovery plan i
 IaC Testing, or Infrastructure as Code Testing, is the process of testing infrastructure code to ensure that it is correct and will deploy as expected. This can be done using a variety of tools and techniques, such as unit testing, integration testing, and end-to-end testing.
 
 IaC Testing is important in DevOps because it can help to ensure the reliability of infrastructure deployments. By testing infrastructure code before it is deployed, DevOps teams can identify and fix any errors that could cause problems in production.
+
+Common tools include `terraform test` / `tofu test`, Terratest, static analysis and policy checks with Checkov, Trivy or Conftest (Open Policy Agent), and linters such as tflint.
 
 ## Explain the concept of "Docker Compose" and its use in managing multi-container Docker applications.
 
