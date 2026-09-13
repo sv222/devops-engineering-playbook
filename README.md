@@ -192,17 +192,18 @@ To deploy a new version of an application using a blue-green deployment, you fir
 
 The 12-Factor App methodology is a set of guidelines for developing applications that are well-suited for DevOps environments. The 12 factors are:
 
-1. Codebase: The codebase for the application should be in a single repository.
-2. Dependencies: All of the application's dependencies should be declared explicitly.
-3. Build, release, run: The application should be built, released, and run in a repeatable and predictable way.
-4. Environments: The application should be able to run in different environments without any changes to the code.
-5. Processes: The application should be designed to run as a set of independent processes.
-6. Port binding: The application should expose its services on a well-known port.
-7. Concurrency: The application should be able to handle concurrent requests.
-8. Disposability: The application should be able to be started and stopped quickly.
-9. Dev/prod parity: The development and production environments should be as similar as possible.
-10. Admin processes: The application should have a way to run administrative tasks, such as migrations and backups.
-11. Background processes: The application should be able to run background tasks, such as cron jobs and workers.
+1. Codebase: One codebase tracked in version control, with many deploys.
+2. Dependencies: Explicitly declare and isolate all dependencies.
+3. Config: Store configuration in the environment, not in the code.
+4. Backing services: Treat backing services, such as databases and queues, as attached resources.
+5. Build, release, run: Strictly separate the build, release and run stages.
+6. Processes: Execute the app as one or more stateless processes.
+7. Port binding: Export services by binding to a port.
+8. Concurrency: Scale out through the process model.
+9. Disposability: Maximize robustness with fast startup and graceful shutdown.
+10. Dev/prod parity: Keep development, staging and production as similar as possible.
+11. Logs: Treat logs as event streams written to stdout.
+12. Admin processes: Run administrative and management tasks as one-off processes.
 
 The 12-Factor App methodology is popular in DevOps because it helps to develop applications that are easy to deploy, manage, and scale.
 
