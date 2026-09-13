@@ -665,7 +665,10 @@ Current Docker Compose is the `docker compose` plugin (Compose v2); the standalo
 
 ## Contributing to This Repository
 
-We welcome contributions from the community. If you have any suggestions for new questions or answers, please feel free to open an issue or submit a pull request.
+We welcome contributions from the community. If you have any suggestions for new questions or answers, please feel free to open an issue or submit a pull request. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
-This project is licensed under the MIT License.
+
+This work is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0). See [LICENSE](LICENSE) for the full text.
+
+Copyright 2026 Stanislav
