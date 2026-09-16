@@ -17,7 +17,7 @@ Thanks for helping improve this playbook. Small fixes and new entries are both w
 
 ## Markdown style
 
-- Use one H2 (`##`) heading per entry, in sentence case, matching the existing entries.
+- Use one H2 (`##`) heading per entry, matching the existing entries.
 - Put code in fenced blocks with a language tag, such as `yaml` or `bash`.
 - Remove trailing whitespace before you commit.
 
