@@ -550,11 +550,9 @@ There are a number of ways to optimize DevOps pipelines for large-scale and comp
 
 ## How do you manage secrets and sensitive data in a containerized environment using Docker?
 
-There are a number of ways to manage secrets and sensitive data in a containerized environment using Docker. Some common approaches include:
+For general practices see [How do you manage secrets and sensitive data in a DevOps environment?](#how-do-you-manage-secrets-and-sensitive-data-in-a-devops-environment).
 
-- **Use a secrets management tool:** A secrets management tool can help you to store and manage secrets securely. Secrets management tools can encrypt secrets and restrict access to secrets to authorized users.
-- **Use a secure container registry:** A secure container registry can help you to store and manage container images securely. Secure container registries can encrypt container images and restrict access to container images to authorized users.
-- **Use a cloud platform with security features:** Many cloud platforms offer security features such as encryption and access control. You can use these features to protect your secrets and sensitive data.
+There are a number of ways to manage secrets and sensitive data in a containerized environment using Docker. Some common approaches include:
 - **Use Docker or Compose secrets and BuildKit secret mounts:** Pass secrets at runtime as files via Docker secrets (Swarm) or Compose secrets, and use `RUN --mount=type=secret` at build time instead of `ENV` or `ARG`, which can leak into image layers and history.
 - **On Kubernetes, sync from an external store:** Use a tool such as the External Secrets Operator or the Secrets Store CSI Driver instead of committing Secret manifests.
 
