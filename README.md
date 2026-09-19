@@ -60,11 +60,10 @@ A practical reference on CI/CD, infrastructure automation, containers and Kubern
 54. [How do you manage secrets and sensitive data in a containerized environment using Docker?](#how-do-you-manage-secrets-and-sensitive-data-in-a-containerized-environment-using-docker)
 55. [Benefits of Observability in Microservices Architecture](#benefits-of-observability-in-microservices-architecture)
 56. [How to Achieve High Availability and Fault Tolerance in a DevOps Architecture](#how-to-achieve-high-availability-and-fault-tolerance-in-a-devops-architecture)
-57. [What is "Continuous Integration" in the DevOps Lifecycle?](#what-is-continuous-integration-in-the-devops-lifecycle)
-58. [What is "Git Flow," and How Does It Structure the Development Process in DevOps?](#what-is-git-flow-and-how-does-it-structure-the-development-process-in-devops)
-59. [What Are the Key Considerations for Creating a Disaster Recovery Plan in a DevOps Environment?](#what-are-the-key-considerations-for-creating-a-disaster-recovery-plan-in-a-devops-environment)
-60. [What is "IaC Testing," and how does it ensure the reliability of infrastructure deployments in DevOps?](#what-is-iac-testing-and-how-does-it-ensure-the-reliability-of-infrastructure-deployments-in-devops)
-61. [Explain the concept of "Docker Compose" and its use in managing multi-container Docker applications.](#explain-the-concept-of-docker-compose-and-its-use-in-managing-multi-container-docker-applications)
+57. [What is "Git Flow," and How Does It Structure the Development Process in DevOps?](#what-is-git-flow-and-how-does-it-structure-the-development-process-in-devops)
+58. [What Are the Key Considerations for Creating a Disaster Recovery Plan in a DevOps Environment?](#what-are-the-key-considerations-for-creating-a-disaster-recovery-plan-in-a-devops-environment)
+59. [What is "IaC Testing," and how does it ensure the reliability of infrastructure deployments in DevOps?](#what-is-iac-testing-and-how-does-it-ensure-the-reliability-of-infrastructure-deployments-in-devops)
+60. [Explain the concept of "Docker Compose" and its use in managing multi-container Docker applications.](#explain-the-concept-of-docker-compose-and-its-use-in-managing-multi-container-docker-applications)
 
 ## What is DevOps, and how does it differ from traditional IT practices?
 
@@ -492,7 +491,7 @@ Popular meshes include Istio (which offers a sidecar-less ambient mode) and Link
 
 ## What is "Continuous Integration vs. Continuous Delivery vs. Continuous Deployment"?
 
-Continuous Integration (CI) is the practice of integrating changes to code into a shared repository frequently.
+Continuous Integration (CI) is the practice of integrating changes to code into a shared repository frequently. CI surfaces integration problems early, when they are cheapest to fix.
 
 Continuous Delivery (CD) is the practice of automatically preparing code changes for release, so that every build is deployable to production at any time.
 
@@ -588,12 +587,6 @@ There are a number of ways to achieve high availability and fault tolerance in a
 - **Use a load balancer:** A load balancer can distribute traffic across multiple servers, which can help to improve availability and performance.
 - **Use a container orchestration platform:** A container orchestration platform such as Kubernetes can help you to manage and deploy your applications in a scalable and fault-tolerant way.
 - **Use a cloud platform:** A cloud platform such as AWS, Azure, or Google Cloud Platform can provide you with a highly available and fault-tolerant infrastructure for your DevOps architecture.
-
-## What is "Continuous Integration" in the DevOps Lifecycle?
-
-Continuous integration (CI) is the practice of integrating changes to code into a shared repository frequently. CI allows developers to identify and fix problems early in the development process.
-
-CI is an important part of the DevOps lifecycle because it helps to ensure the quality and reliability of software applications.
 
 ## What is "Git Flow," and How Does It Structure the Development Process in DevOps?
 
