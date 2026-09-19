@@ -49,21 +49,20 @@ A practical reference on CI/CD, infrastructure automation, containers and Kubern
 43. [How do you implement "Infrastructure as Code" for serverless architectures?](#how-do-you-implement-infrastructure-as-code-for-serverless-architectures)
 44. [What is the role of "Service Mesh" in microservices architectures?](#what-is-the-role-of-service-mesh-in-microservices-architectures)
 45. [What is "Continuous Integration vs. Continuous Delivery vs. Continuous Deployment"?](#what-is-continuous-integration-vs-continuous-delivery-vs-continuous-deployment)
-46. [How do you manage database schema changes in a DevOps pipeline?](#how-do-you-manage-database-schema-changes-in-a-devops-pipeline)
-47. [What is a "Rolling Deployment" strategy, and what are its advantages?](#what-is-a-rolling-deployment-strategy-and-what-are-its-advantages)
-48. [How do you handle data migration in a DevOps environment?](#how-do-you-handle-data-migration-in-a-devops-environment)
-49. [Explain the concept of "Serverless Databases" in DevOps applications.](#explain-the-concept-of-serverless-databases-in-devops-applications)
-50. [What is "Serverless Monitoring," and how does it differ from traditional application monitoring?](#what-is-serverless-monitoring-and-how-does-it-differ-from-traditional-application-monitoring)
-51. [How do you ensure data consistency in a distributed microservices architecture?](#how-do-you-ensure-data-consistency-in-a-distributed-microservices-architecture)
-52. [Explain the role of "ChatOps" in DevOps communication and collaboration.](#explain-the-role-of-chatops-in-devops-communication-and-collaboration)
-53. [How do you optimize DevOps pipelines for large-scale and complex applications?](#how-do-you-optimize-devops-pipelines-for-large-scale-and-complex-applications)
-54. [How do you manage secrets and sensitive data in a containerized environment using Docker?](#how-do-you-manage-secrets-and-sensitive-data-in-a-containerized-environment-using-docker)
-55. [Benefits of Observability in Microservices Architecture](#benefits-of-observability-in-microservices-architecture)
-56. [How to Achieve High Availability and Fault Tolerance in a DevOps Architecture](#how-to-achieve-high-availability-and-fault-tolerance-in-a-devops-architecture)
-57. [What is "Git Flow," and How Does It Structure the Development Process in DevOps?](#what-is-git-flow-and-how-does-it-structure-the-development-process-in-devops)
-58. [What Are the Key Considerations for Creating a Disaster Recovery Plan in a DevOps Environment?](#what-are-the-key-considerations-for-creating-a-disaster-recovery-plan-in-a-devops-environment)
-59. [What is "IaC Testing," and how does it ensure the reliability of infrastructure deployments in DevOps?](#what-is-iac-testing-and-how-does-it-ensure-the-reliability-of-infrastructure-deployments-in-devops)
-60. [Explain the concept of "Docker Compose" and its use in managing multi-container Docker applications.](#explain-the-concept-of-docker-compose-and-its-use-in-managing-multi-container-docker-applications)
+46. [What is a "Rolling Deployment" strategy, and what are its advantages?](#what-is-a-rolling-deployment-strategy-and-what-are-its-advantages)
+47. [How do you handle data migration in a DevOps environment?](#how-do-you-handle-data-migration-in-a-devops-environment)
+48. [Explain the concept of "Serverless Databases" in DevOps applications.](#explain-the-concept-of-serverless-databases-in-devops-applications)
+49. [What is "Serverless Monitoring," and how does it differ from traditional application monitoring?](#what-is-serverless-monitoring-and-how-does-it-differ-from-traditional-application-monitoring)
+50. [How do you ensure data consistency in a distributed microservices architecture?](#how-do-you-ensure-data-consistency-in-a-distributed-microservices-architecture)
+51. [Explain the role of "ChatOps" in DevOps communication and collaboration.](#explain-the-role-of-chatops-in-devops-communication-and-collaboration)
+52. [How do you optimize DevOps pipelines for large-scale and complex applications?](#how-do-you-optimize-devops-pipelines-for-large-scale-and-complex-applications)
+53. [How do you manage secrets and sensitive data in a containerized environment using Docker?](#how-do-you-manage-secrets-and-sensitive-data-in-a-containerized-environment-using-docker)
+54. [Benefits of Observability in Microservices Architecture](#benefits-of-observability-in-microservices-architecture)
+55. [How to Achieve High Availability and Fault Tolerance in a DevOps Architecture](#how-to-achieve-high-availability-and-fault-tolerance-in-a-devops-architecture)
+56. [What is "Git Flow," and How Does It Structure the Development Process in DevOps?](#what-is-git-flow-and-how-does-it-structure-the-development-process-in-devops)
+57. [What Are the Key Considerations for Creating a Disaster Recovery Plan in a DevOps Environment?](#what-are-the-key-considerations-for-creating-a-disaster-recovery-plan-in-a-devops-environment)
+58. [What is "IaC Testing," and how does it ensure the reliability of infrastructure deployments in DevOps?](#what-is-iac-testing-and-how-does-it-ensure-the-reliability-of-infrastructure-deployments-in-devops)
+59. [Explain the concept of "Docker Compose" and its use in managing multi-container Docker applications.](#explain-the-concept-of-docker-compose-and-its-use-in-managing-multi-container-docker-applications)
 
 ## What is DevOps, and how does it differ from traditional IT practices?
 
@@ -341,7 +340,7 @@ Releasing a feature to a subset of users first lowers release risk and lets you 
 
 There are a number of ways to handle database changes in a DevOps pipeline while minimizing downtime, including:
 
-- **Use a schema migration tool:** A schema migration tool can help you to automate the process of making changes to your database schema.
+- **Use a schema migration tool:** A schema migration tool can help you to automate the process of making changes to your database schema. Flyway and Liquibase are both popular examples.
 - **Use a blue-green deployment:** A blue-green deployment allows you to deploy a new version of your database schema to a staging environment and then switch traffic from the production environment to the staging environment.
 - **Use a canary deployment:** A canary deployment allows you to deploy a new version of your database schema to a small subset of users and then gradually roll out the new schema to all users over time.
 
@@ -496,12 +495,6 @@ Continuous Integration (CI) is the practice of integrating changes to code into 
 Continuous Delivery (CD) is the practice of automatically preparing code changes for release, so that every build is deployable to production at any time.
 
 Continuous Deployment (CD) is the practice of automatically deploying code changes to production whenever a change passes CI and CD checks.
-
-## How do you manage database schema changes in a DevOps pipeline?
-
-There are a number of ways to manage database schema changes in a DevOps pipeline. One approach is to use a database migration tool. For example, Flyway and Liquibase are both popular database migration tools that can be used to automate the process of making changes to database schemas.
-
-Another approach is to use a feature flag management tool to control when database schema changes are released to production. This can help to reduce the risk of database schema changes causing problems in production.
 
 ## What is a "Rolling Deployment" strategy, and what are its advantages?
 
