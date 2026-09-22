@@ -279,9 +279,9 @@ Shift-Left Testing enhances software quality in DevOps by helping to identify an
 
 ## Explain the concept of "Dark Launching" in DevOps.
 
-Dark Launching is the practice of deploying a new version of a software application to a small subset of users without notifying them. This allows you to test the new version of the application in a production environment without impacting the majority of your users.
+Dark launching is the practice of shipping a new feature to production while it stays hidden from users. The feature is switched off behind a feature flag, or it runs in shadow mode, where live traffic is mirrored to the new code path and the responses are discarded. This lets you test the feature under real production load before anyone sees it.
 
-Dark Launching is a useful technique for reducing the risk of deploying new software applications. By dark launching a new version of an application, you can identify and fix any problems with the new version before it is rolled out to all of your users.
+You expose the feature later by turning the flag on for a few users, then more. Unlike a canary deployment, which routes real users to the new version, a dark launch keeps the feature hidden from users until you choose to expose it.
 
 ## How do you ensure the security of Docker containers in a DevOps pipeline?
 
