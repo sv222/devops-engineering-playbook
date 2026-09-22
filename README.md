@@ -213,11 +213,11 @@ Continuous Testing is important in DevOps because it helps to ensure that softwa
 
 GitOps is a practice of managing infrastructure using Git. GitOps treats infrastructure as code and uses Git to manage the desired state of the infrastructure.
 
-GitOps differs from traditional infrastructure management in a number of ways. First, GitOps is more declarative. In traditional infrastructure management, you typically use a configuration management tool to define the desired state of your infrastructure. In GitOps, you define the desired state of your infrastructure in Git.
+GitOps differs from traditional infrastructure management in how changes reach the system. First, the desired state is declared in Git and is versioned. The immutable history records every change, so Git is the audit trail for who changed what and when.
 
-Second, GitOps is more transparent. In traditional infrastructure management, it can be difficult to track the changes that have been made to your infrastructure. In GitOps, all of the changes to your infrastructure are tracked in Git, which makes it easy to see who made what changes and when.
+Second, an agent running in the environment pulls the desired state from Git and applies it automatically. Changes are not pushed in from outside.
 
-Third, GitOps is more auditable. In traditional infrastructure management, it can be difficult to audit the changes that have been made to your infrastructure. In GitOps, all of the changes to your infrastructure are tracked in Git, which makes it easy to audit who made what changes and when.
+Third, the agent continuously reconciles the live system with Git and corrects drift. Push-based CI scripts and manual changes run once, so the live state can drift from what was recorded.
 
 Argo CD and Flux are the most widely used GitOps controllers for Kubernetes. They continuously reconcile the cluster with the desired state in Git.
 
