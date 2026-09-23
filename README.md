@@ -231,13 +231,14 @@ Jenkins and Travis CI are both continuous integration (CI) tools, but they have 
 - Self-hosted
 - Highly customizable
 - Wide range of plugins available
+- You run and patch the controller and agents yourself
 
 ### Travis CI
 
 - Cloud-based
 - Easy to use
 - Limited customization options
-- Largely legacy today: free open-source builds ended in 2021, and many projects have moved to GitHub Actions
+- Largely legacy today: no unlimited free builds for open-source projects (only a limited trial allotment), and many projects have moved to GitHub Actions
 
 Which CI tool is better for you depends on your specific needs.
 
