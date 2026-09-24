@@ -342,9 +342,9 @@ Releasing a feature to a subset of users first lowers release risk and lets you 
 
 There are a number of ways to handle database changes in a DevOps pipeline while minimizing downtime, including:
 
-- **Use a schema migration tool:** A schema migration tool can help you to automate the process of making changes to your database schema. Flyway and Liquibase are both popular examples.
-- **Use a blue-green deployment:** A blue-green deployment allows you to deploy a new version of your database schema to a staging environment and then switch traffic from the production environment to the staging environment.
-- **Use a canary deployment:** A canary deployment allows you to deploy a new version of your database schema to a small subset of users and then gradually roll out the new schema to all users over time.
+- **Use a schema migration tool:** A schema migration tool can help you to automate the process of making changes to your database schema. Flyway and Liquibase are both popular examples. Keep migrations versioned in source control and run them from the pipeline.
+- **Use expand/contract (parallel change) migrations:** Make each change backward compatible and split it into steps: add the new nullable column or table, deploy code that writes to both old and new, backfill the data, switch reads to the new structure, and drop the old one in a later release.
+- **Use online schema change tools for large tables:** Tools such as gh-ost or pt-online-schema-change, or your database's native online DDL, apply changes without long table locks.
 
 By following these best practices, you can minimize the downtime associated with database changes in your DevOps pipeline.
 
