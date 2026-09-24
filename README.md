@@ -250,7 +250,7 @@ Container orchestration tools like Kubernetes are important in DevOps because th
 
 Kubernetes offers a number of benefits for DevOps, including:
 
-- **Scalability:** Kubernetes can scale your containerized applications up or down automatically based on demand.
+- **Scalability:** Automatic scaling needs the Horizontal Pod Autoscaler to scale pods and a node autoscaler, such as Cluster Autoscaler or Karpenter, to scale nodes.
 - **Reliability:** Kubernetes can automatically restart failed containers and rebalance workloads across servers.
 - **Efficiency:** Kubernetes can help you to optimize the use of your resources by running multiple containers on a single server.
 
