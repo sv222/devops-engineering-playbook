@@ -400,9 +400,9 @@ By following these best practices, you can help to ensure that your DevOps pipel
 
 ## What is "Serverless Orchestration," and how does it impact application development in DevOps?
 
-Serverless orchestration is the process of automating the deployment and management of serverless applications. Serverless orchestration tools can help to simplify the development and deployment of serverless applications by automating tasks such as provisioning resources, scaling applications, and routing traffic.
+Serverless orchestration is coordinating multiple functions or services into a workflow. The orchestrator manages state between steps, retries on failure, and branching or parallel work, so each function stays small and does one job. Examples include AWS Step Functions, Azure Durable Functions and Google Cloud Workflows.
 
-Serverless orchestration is impacting application development in DevOps by making it easier to develop and deploy serverless applications. Serverless orchestration tools can free up developers to focus on writing code without having to worry about managing servers.
+For application development, this moves control flow and error handling out of custom glue code and into the workflow definition. Developers still need idempotent steps, since a retry can run the same step twice.
 
 ## Explain the concept of "Trunk-Based Development" and how it differs from feature branching in source control:
 
