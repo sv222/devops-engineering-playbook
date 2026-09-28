@@ -495,7 +495,7 @@ Continuous Integration (CI) is the practice of integrating changes to code into 
 
 Continuous Delivery (CD) is the practice of automatically preparing code changes for release, so that every build is deployable to production at any time.
 
-Continuous Deployment (CD) is the practice of automatically deploying code changes to production whenever a change passes CI and CD checks.
+Continuous Deployment is the practice of deploying every change that passes automated checks to production without manual approval.
 
 ## What is a "Rolling Deployment" strategy, and what are its advantages?
 
