@@ -430,7 +430,7 @@ There are a number of ways to manage secrets and sensitive data in a DevOps envi
 
 ## What are "Immutable Artifacts," and how do they improve deployment reliability in DevOps?
 
-Immutable artifacts are artifacts that cannot be changed once they are created. This includes artifacts such as container images and database schemas.
+Immutable artifacts are artifacts that cannot be changed once they are created. This includes artifacts such as container images, build packages and compiled binaries. Database schemas are not immutable artifacts; they change through versioned migrations.
 
 Immutable artifacts improve deployment reliability in DevOps by reducing the risk of errors caused by changes to artifacts. Immutable artifacts also make it easier to roll back deployments if something goes wrong. Reference container images by digest rather than a mutable tag, and sign them so the exact artifact that passed your pipeline is the one that is deployed.
 
