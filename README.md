@@ -521,11 +521,13 @@ Serverless databases reduce operational overhead in DevOps applications. The tra
 
 ## What is "Serverless Monitoring," and how does it differ from traditional application monitoring?
 
-Serverless monitoring is the practice of monitoring serverless applications. Serverless monitoring differs from traditional application monitoring in a number of ways, including:
+Serverless monitoring is the practice of monitoring serverless applications. Because there are no long-running hosts to install agents on, it differs from traditional application monitoring in a number of ways:
 
-- Serverless monitoring needs to be able to monitor applications that are distributed across multiple cloud providers.
-- Serverless monitoring needs to be able to monitor applications that are scaled automatically.
-- Serverless monitoring needs to be able to monitor applications that are ephemeral.
+- You rely on provider metrics and logs, plus instrumentation such as OpenTelemetry, instead of host agents.
+- Distributed tracing is needed to follow a request across many short-lived functions and managed services.
+- Watch cold starts, duration, errors, throttles and concurrency limits.
+- Short-lived invocations need centralized logs, since local log files disappear with the instance.
+- Track cost per invocation, since billing follows usage.
 
 ## How do you ensure data consistency in a distributed microservices architecture?
 
