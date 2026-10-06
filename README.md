@@ -609,7 +609,7 @@ Common tools include `terraform test` / `tofu test`, Terratest, static analysis 
 
 Docker Compose is a tool that is used to define and run multi-container Docker applications. Docker Compose uses a YAML file to define the services that make up an application and their dependencies.
 
-Docker Compose is a popular tool for managing multi-container Docker applications because it makes it easy to deploy and manage complex applications. Docker Compose can also be used to develop and test applications locally before they are deployed to production.
+Docker Compose is a popular tool for managing multi-container Docker applications because it makes it easy to deploy and manage complex applications. Docker Compose can also be used to develop and test applications locally before they are deployed to production. Compose suits local development and small single-host deployments; for production at scale, use Kubernetes or a managed container orchestrator.
 
 Current Docker Compose is the `docker compose` plugin (Compose v2); the standalone `docker-compose` v1 command is end of life. The Compose Specification names the file `compose.yaml` (the older `docker-compose.yml` still works), and the top-level `version:` key is obsolete and can be omitted.
 
