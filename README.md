@@ -104,7 +104,7 @@ Common IaC tools include Terraform and OpenTofu, Pulumi, Ansible and cloud-nativ
 
 Configuration management is the process of managing the configuration of IT systems. This includes tracking the configuration of systems, making changes to the configuration, and rolling back changes if necessary.
 
-Configuration management is important in DevOps because it helps to ensure that systems are configured correctly and consistently. It also helps to prevent changes to systems from causing unexpected problems.
+Configuration management is important in DevOps because it helps to ensure that systems are configured correctly and consistently. It also helps to prevent changes to systems from causing unexpected problems. Common tools include Ansible, Puppet and Chef, and good tools are idempotent, so re-running them yields the same state.
 
 ## What are microservices, and how do they relate to DevOps architecture?
 
