@@ -295,6 +295,7 @@ There are a number of ways to ensure the security of Docker containers in a DevO
 - **Use minimal, pinned base images:** Prefer minimal base images, pin them by digest, and run containers as a non-root user with a read-only root filesystem where possible.
 - **Generate an SBOM and sign images:** Produce an SBOM with a tool such as Syft, scan it or the image with a scanner such as Trivy or Grype, sign the image with cosign, and verify signatures at admission time with a Kubernetes policy engine: Kyverno verifies cosign signatures natively, while OPA Gatekeeper needs an external provider such as Ratify.
 - **Record provenance:** Attach SLSA build provenance attestations to images so consumers can verify where and how an image was built.
+- **Limit runtime privileges:** Do not run privileged containers, drop unneeded Linux capabilities, and never mount the Docker socket into a container.
 
 ## What is "Canary Deployment," and how does it work in DevOps?
 
