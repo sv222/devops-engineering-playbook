@@ -442,7 +442,7 @@ Self-healing infrastructure is infrastructure that can automatically detect and 
 
 Monitoring tools are used to collect data about the state of the infrastructure. Automation tools are used to analyze the data collected by the monitoring tools and to take corrective action if necessary.
 
-Self-healing infrastructure can help to improve the reliability of DevOps environments by reducing the need for manual intervention to fix problems.
+Self-healing infrastructure can help to improve the reliability of DevOps environments by reducing the need for manual intervention to fix problems. On Kubernetes, liveness probes restart failing containers, readiness probes remove pods from Service endpoints, and ReplicaSets keep the desired replica count; cloud autoscaling groups replace unhealthy instances.
 
 ## Explain the concept of "Continuous Deployment" and its benefits in DevOps.
 
