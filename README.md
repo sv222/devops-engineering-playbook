@@ -354,7 +354,7 @@ By following these best practices, you can minimize the downtime associated with
 
 Chaos Engineering is the practice of introducing controlled failure to systems in order to learn how they respond and to identify and fix weaknesses. Chaos Engineering is related to DevOps practices because it can help to improve the reliability of software applications.
 
-DevOps teams can use Chaos Engineering to test their systems for resilience to failures. This can help to identify and fix weaknesses in the system before they cause problems in production.
+DevOps teams can use Chaos Engineering to test their systems for resilience to failures. This can help to identify and fix weaknesses in the system before they cause problems in production. Start from a steady-state hypothesis, limit the blast radius, and define abort conditions; tools include Chaos Mesh, LitmusChaos and AWS Fault Injection Service.
 
 ## Explain the importance of "Serverless Computing" in DevOps:
 
