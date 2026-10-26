@@ -429,6 +429,7 @@ There are a number of ways to manage secrets and sensitive data in a DevOps envi
 - **Use a cloud platform with security features:** Many cloud platforms offer security features such as encryption and access control. You can use these features to protect your secrets and sensitive data.
 - **Keep secrets out of Git:** Use secret scanning and pre-commit checks, and store encrypted secrets in Git only with a tool such as SOPS.
 - **Use short-lived credentials:** Prefer OIDC federation and workload identity over static access keys.
+- **Rotate secrets regularly:** Where the secrets manager supports it, prefer dynamic secrets that are generated on demand with a short TTL, such as the Vault or OpenBao database engines or cloud IAM.
 
 ## What are "Immutable Artifacts," and how do they improve deployment reliability in DevOps?
 
