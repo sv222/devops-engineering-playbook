@@ -550,9 +550,12 @@ ChatOps can play a valuable role in DevOps communication and collaboration by he
 
 There are a number of ways to optimize DevOps pipelines for large-scale and complex applications. Some common approaches include:
 
-- **Use a continuous integration (CI) and continuous delivery (CD) tool:** A CI/CD tool can help you to automate your DevOps pipeline and to streamline the deployment process.
-- **Use a containerization platform:** A containerization platform such as Docker or Kubernetes can help you to package and deploy your applications in a scalable and efficient way.
-- **Use a cloud platform:** A cloud platform such as AWS, Azure, or Google Cloud Platform can provide you with a scalable and reliable infrastructure for your DevOps pipeline.
+- **Cache dependencies and build layers:** Cache package downloads and Docker layers so unchanged steps are skipped.
+- **Run jobs and tests in parallel:** Run independent jobs at the same time and split large test suites across runners.
+- **Build and test only what changed:** Use affected-only builds in monorepos, backed by a remote build cache so unchanged targets are reused.
+- **Use ephemeral autoscaling runners:** Run jobs on short-lived runners that scale with the queue, so capacity matches demand.
+- **Fail fast:** Run quick checks such as linting and unit tests first, so broken changes stop before slow stages run.
+- **Track pipeline duration and flaky tests:** Measure stage timings and failure rates, and quarantine or fix flaky tests.
 
 ## How do you manage secrets and sensitive data in a containerized environment using Docker?
 
