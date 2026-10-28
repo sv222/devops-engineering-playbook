@@ -163,7 +163,7 @@ Some popular DevOps tools include:
 
 ## Explain the concept of "Immutable Infrastructure" and its benefits in DevOps.
 
-Immutable Infrastructure is a practice of treating infrastructure as code and deploying it in a way that makes it immutable. This means that once infrastructure is deployed, it is not changed. Instead, new infrastructure is deployed with the desired changes and the old infrastructure is destroyed. An immutable server or image is built once and replaced, never patched in place; examples include machine images and container images.
+Immutable Infrastructure is a practice of treating infrastructure as code and deploying it in a way that makes it immutable. This means that once infrastructure is deployed, it is not changed. Instead, new infrastructure is deployed with the desired changes and the old infrastructure is destroyed. An immutable server or image is built once and replaced, never patched in place; examples include machine images and container images. Rollback means redeploying the previous image or version.
 
 Immutable Infrastructure offers a number of benefits in DevOps, including:
 
