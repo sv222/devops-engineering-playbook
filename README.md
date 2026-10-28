@@ -395,10 +395,8 @@ There are a number of ways to ensure that your DevOps pipeline is compliant with
 
 - **Use a security scanning tool:** A security scanning tool can help you to identify and fix security vulnerabilities in your code.
 - **Use a compliance management tool:** A compliance management tool can help you to track and manage your compliance requirements.
-- **Use a secure infrastructure:** Deploy your applications to a secure infrastructure, such as a cloud platform that offers security features such as encryption and access control.
-- **Educate your team:** Educate your team about security and compliance best practices.
 
-By following these best practices, you can help to ensure that your DevOps pipeline is compliant with security and regulatory requirements.
+For the principles behind this, see [What are the key principles of "Continuous Compliance," and how do they ensure security in DevOps?](#what-are-the-key-principles-of-continuous-compliance-and-how-do-they-ensure-security-in-devops).
 
 ## What is "Serverless Orchestration," and how does it impact application development in DevOps?
 
