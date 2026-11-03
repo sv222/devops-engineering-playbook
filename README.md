@@ -350,17 +350,12 @@ DevOps teams can use Chaos Engineering to test their systems for resilience to f
 
 ## Explain the importance of "Serverless Computing" in DevOps:
 
-Serverless computing is a cloud computing model where the cloud provider manages the server infrastructure. This allows developers to focus on writing code without having to worry about managing servers.
-
-Serverless computing is important in DevOps because it can help to simplify and streamline the software development and delivery process. DevOps teams can use serverless computing to deploy and manage applications without having to worry about managing servers. This can free up DevOps teams to focus on other tasks, such as developing new features and improving the quality of their applications.
-
-Here are some specific benefits of serverless computing for DevOps:
+Serverless computing is a cloud computing model where the cloud provider manages the server infrastructure.
 
 - **Reduced complexity:** Serverless computing can help to reduce the complexity of the software development and delivery process by eliminating the need to manage servers.
 - **Increased agility:** Serverless computing can help to increase the agility of DevOps teams by allowing them to deploy and manage applications more quickly and easily.
 - **Improved scalability:** Serverless computing can help to improve the scalability of applications by allowing them to scale up or down automatically based on demand.
-
-Overall, serverless computing is a valuable tool for DevOps teams that can help them to improve the efficiency and reliability of their software development and delivery process.
+- **Trade-offs:** Cold starts, execution time limits and vendor lock-in.
 
 ## How to perform "A/B Testing" in a DevOps pipeline to evaluate new features:
 
