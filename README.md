@@ -131,10 +131,8 @@ Some best practices for security in a DevOps pipeline include:
 - Use secure containers: Use container security tools to scan and secure your containers.
 - **Secure the software supply chain:** Generate a software bill of materials (SBOM) for each build, sign artifacts and container images (for example with Sigstore cosign), and record build provenance that meets a SLSA level so you can verify what you deploy.
 - **Avoid long-lived credentials:** Prefer short-lived credentials, such as OIDC federation from the CI system to the cloud provider, over static keys stored as CI secrets.
-- Use a secure infrastructure: Deploy your applications to a secure infrastructure, such as a cloud platform that offers security features such as encryption and access control.
+- Harden the platform: least-privilege IAM, network segmentation, encryption at rest and in transit.
 - Educate your team: Educate your team about security best practices and how to implement them in the DevOps pipeline.
-
-By following these best practices, you can help to secure your DevOps pipeline and reduce the risk of security breaches.
 
 ## What is the difference between Git and SVN, and why is Git preferred in DevOps?
 
