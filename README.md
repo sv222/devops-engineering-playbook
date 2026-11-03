@@ -344,8 +344,6 @@ There are a number of ways to handle database changes in a DevOps pipeline while
 - **Use expand/contract (parallel change) migrations:** Make each change backward compatible and split it into steps: add the new nullable column or table, deploy code that writes to both old and new, backfill the data, switch reads to the new structure, and drop the old one in a later release.
 - **Use online schema change tools for large tables:** Tools such as gh-ost or pt-online-schema-change, or your database's native online DDL, apply changes without long table locks.
 
-By following these best practices, you can minimize the downtime associated with database changes in your DevOps pipeline.
-
 ## What is "Chaos Engineering," and how does it relate to DevOps practices?
 
 Chaos Engineering is the practice of introducing controlled failure to systems in order to learn how they respond and to identify and fix weaknesses. Chaos Engineering is related to DevOps practices because it can help to improve the reliability of software applications.
