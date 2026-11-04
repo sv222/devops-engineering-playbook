@@ -76,7 +76,7 @@ CI/CD (Continuous Integration and Continuous Delivery) is a set of practices tha
 
 1. **Continuous Integration:** Code changes are automatically integrated into a central repository, such as a Git repository.
 2. **Build:** The code is automatically built and tested.
-3. **Deploy:** The built code is automatically deployed to a production environment.
+3. **Deploy:** The built code is deployed to staging and then to production. With continuous deployment this happens automatically; with continuous delivery it waits for a manual approval.
 
 CI/CD pipelines can be used to deploy software more frequently and reliably. They can also help to identify and fix bugs early in the development process.
 
