@@ -1,0 +1,6 @@
+# Local development servers (localhost on any port or path)
+^https?://localhost
+# IPv4 loopback address
+^https?://127\.0\.0\.1
+# Placeholder domains reserved for documentation examples (RFC 2606)
+^https?://(www\.)?example\.(com|org)
