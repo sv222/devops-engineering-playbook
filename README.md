@@ -408,11 +408,9 @@ Serverless orchestration is impacting application development in DevOps by makin
 
 Trunk-Based Development is a software development practice where developers work directly on the trunk branch of the source code repository. This means that all changes to the code are merged into the trunk branch on a regular basis.
 
-Trunk-Based Development differs from feature branching in source control in a number of ways. First, Trunk-Based Development does not use feature branches. Instead, developers work directly on the trunk branch. Second, Trunk-Based Development requires changes to the code to be merged into the trunk branch on a regular basis. This helps to reduce the risk of merge conflicts and makes it easier to deploy changes to production.
+Trunk-Based Development differs from feature branching in source control in a number of ways. First, Trunk-Based Development avoids long-lived feature branches. Developers commit to trunk or to short-lived branches merged within a day or two through a pull request, and unfinished work is hidden behind feature flags. Second, Trunk-Based Development requires changes to the code to be merged into the trunk branch on a regular basis. This helps to reduce the risk of merge conflicts and makes it easier to deploy changes to production.
 
 Trunk-Based Development is a popular practice in DevOps because it can help to improve the speed and agility of the software development process.
-
-Overall, these are some of the key concepts and techniques that are used in DevOps to improve the efficiency and reliability of the software development and delivery process.
 
 ## What is the importance of "Continuous Documentation" in DevOps?
 
