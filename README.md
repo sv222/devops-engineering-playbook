@@ -385,7 +385,7 @@ To perform A/B testing in a DevOps pipeline, you can follow these steps:
 
 ## Explain the concept of "Log Aggregation" in DevOps:
 
-Log aggregation is the process of collecting logs from multiple sources and centralizing them in a single location. This makes it easier to search and analyze logs to identify and troubleshoot problems.
+Log aggregation is the process of collecting logs from multiple sources and centralizing them in a single location. This makes it easier to search and analyze logs to identify and troubleshoot problems. Use structured (JSON) logs with a correlation or trace ID so a request can be followed across services, and set a retention period.
 
 Log aggregation is important in DevOps because it helps to improve the observability of systems. By centralizing logs, DevOps teams can quickly identify and troubleshoot problems with their systems.
 
