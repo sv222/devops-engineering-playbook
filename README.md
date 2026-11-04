@@ -1,12 +1,6 @@
-# DevOps Engineering Playbook (2026): CI/CD, Infrastructure as Code and Platform Practices
+# DevOps Engineering Playbook
 
-This DevOps engineering playbook is a practical collection of Q&A-style entries on CI/CD, infrastructure automation, containers and Kubernetes, GitOps, observability and supply-chain security. It is written for engineers who build delivery pipelines, infrastructure automation and internal platforms.
-
-Each entry answers a common DevOps question with comprehensive, informative and concise guidance, written in a clear and practical style. The purpose of this repository is to serve as a working reference for engineers who need to:
-
-- Understand the key concepts of DevOps
-- Learn about widely used DevOps tools and technologies
-- Apply proven practices when designing pipelines and platforms
+A practical reference on CI/CD, infrastructure automation, containers and Kubernetes, GitOps, observability and supply-chain security, written as short question-and-answer entries for engineers who build delivery pipelines and internal platforms.
 
 ## Table of Contents
 
