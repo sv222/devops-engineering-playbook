@@ -473,7 +473,7 @@ A service mesh is a layer of infrastructure that sits between microservices and 
 
 Service meshes are important in microservices architectures because they help to make microservices architectures more reliable and manageable.
 
-Popular meshes include Istio, whose sidecar-less ambient mode reached general availability in Istio 1.24, and Linkerd, whose stable releases are now distributed as Buoyant Enterprise for Linkerd, with open-source edge releases. Cilium also provides mesh features using eBPF.
+Popular meshes include Istio, whose sidecar-less ambient mode reached general availability in Istio 1.24, and Linkerd, whose open-source project publishes edge releases while stable releases come from vendors such as Buoyant (Buoyant Enterprise for Linkerd). Cilium also provides mesh features using eBPF.
 
 ## What is "Continuous Integration vs. Continuous Delivery vs. Continuous Deployment"?
 
