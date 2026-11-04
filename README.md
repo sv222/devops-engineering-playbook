@@ -583,6 +583,9 @@ There are a number of ways to achieve high availability and fault tolerance in a
 - **Use a load balancer:** A load balancer can distribute traffic across multiple servers, which can help to improve availability and performance.
 - **Use a container orchestration platform:** A container orchestration platform such as Kubernetes can help you to manage and deploy your applications in a scalable and fault-tolerant way.
 - **Use a cloud platform:** A cloud platform such as AWS, Azure, or Google Cloud Platform can provide you with a highly available and fault-tolerant infrastructure for your DevOps architecture.
+- **Spread across availability zones:** Run across multiple availability zones with no single point of failure.
+- **Use health checks and autoscaling:** Health checks detect failed instances, and autoscaling replaces and adds capacity.
+- **Define SLOs:** Service level objectives set the availability target you design and monitor against.
 
 ## What is "Git Flow," and How Does It Structure the Development Process in DevOps?
 
