@@ -57,17 +57,16 @@ A practical reference on CI/CD, infrastructure automation, containers and Kubern
 51. [What is "Serverless Monitoring," and how does it differ from traditional application monitoring?](#what-is-serverless-monitoring-and-how-does-it-differ-from-traditional-application-monitoring)
 52. [How do you ensure data consistency in a distributed microservices architecture?](#how-do-you-ensure-data-consistency-in-a-distributed-microservices-architecture)
 53. [Explain the role of "ChatOps" in DevOps communication and collaboration.](#explain-the-role-of-chatops-in-devops-communication-and-collaboration)
-54. [What is "Blue-Green Infrastructure," and how does it relate to application deployments in DevOps?](#what-is-blue-green-infrastructure-and-how-does-it-relate-to-application-deployments-in-devops)
-55. [How do you optimize DevOps pipelines for large-scale and complex applications?](#how-do-you-optimize-devops-pipelines-for-large-scale-and-complex-applications)
-56. [Explain the concept of "Environment Drift" and its impact on DevOps environments.](#explain-the-concept-of-environment-drift-and-its-impact-on-devops-environments)
-57. [How do you manage secrets and sensitive data in a containerized environment using Docker?](#how-do-you-manage-secrets-and-sensitive-data-in-a-containerized-environment-using-docker)
-58. [Benefits of Observability in Microservices Architecture](#benefits-of-observability-in-microservices-architecture)
-59. [How to Achieve High Availability and Fault Tolerance in a DevOps Architecture](#how-to-achieve-high-availability-and-fault-tolerance-in-a-devops-architecture)
-60. [What is "Continuous Integration" in the DevOps Lifecycle?](#what-is-continuous-integration-in-the-devops-lifecycle)
-61. [What is "Git Flow," and How Does It Structure the Development Process in DevOps?](#what-is-git-flow-and-how-does-it-structure-the-development-process-in-devops)
-62. [What Are the Key Considerations for Creating a Disaster Recovery Plan in a DevOps Environment?](#what-are-the-key-considerations-for-creating-a-disaster-recovery-plan-in-a-devops-environment)
-63. [What is "IaC Testing," and how does it ensure the reliability of infrastructure deployments in DevOps?](#what-is-iac-testing-and-how-does-it-ensure-the-reliability-of-infrastructure-deployments-in-devops)
-64. [Explain the concept of "Docker Compose" and its use in managing multi-container Docker applications.](#explain-the-concept-of-docker-compose-and-its-use-in-managing-multi-container-docker-applications)
+54. [How do you optimize DevOps pipelines for large-scale and complex applications?](#how-do-you-optimize-devops-pipelines-for-large-scale-and-complex-applications)
+55. [Explain the concept of "Environment Drift" and its impact on DevOps environments.](#explain-the-concept-of-environment-drift-and-its-impact-on-devops-environments)
+56. [How do you manage secrets and sensitive data in a containerized environment using Docker?](#how-do-you-manage-secrets-and-sensitive-data-in-a-containerized-environment-using-docker)
+57. [Benefits of Observability in Microservices Architecture](#benefits-of-observability-in-microservices-architecture)
+58. [How to Achieve High Availability and Fault Tolerance in a DevOps Architecture](#how-to-achieve-high-availability-and-fault-tolerance-in-a-devops-architecture)
+59. [What is "Continuous Integration" in the DevOps Lifecycle?](#what-is-continuous-integration-in-the-devops-lifecycle)
+60. [What is "Git Flow," and How Does It Structure the Development Process in DevOps?](#what-is-git-flow-and-how-does-it-structure-the-development-process-in-devops)
+61. [What Are the Key Considerations for Creating a Disaster Recovery Plan in a DevOps Environment?](#what-are-the-key-considerations-for-creating-a-disaster-recovery-plan-in-a-devops-environment)
+62. [What is "IaC Testing," and how does it ensure the reliability of infrastructure deployments in DevOps?](#what-is-iac-testing-and-how-does-it-ensure-the-reliability-of-infrastructure-deployments-in-devops)
+63. [Explain the concept of "Docker Compose" and its use in managing multi-container Docker applications.](#explain-the-concept-of-docker-compose-and-its-use-in-managing-multi-container-docker-applications)
 
 ## What is DevOps, and how does it differ from traditional IT practices?
 
@@ -179,7 +178,7 @@ Immutable Infrastructure offers a number of benefits in DevOps, including:
 
 Blue-green deployments are a type of deployment strategy that uses two identical production environments. One environment is the active environment, which is the environment that users are currently using. The other environment is the inactive environment, which is a mirror of the active environment.
 
-To deploy a new version of an application using a blue-green deployment, you first deploy the new version to the inactive environment. Once the new version has been deployed and tested, you switch traffic from the active environment to the inactive environment. This makes the new version of the application available to users without any downtime.
+To deploy a new version of an application using a blue-green deployment, you first deploy the new version to the inactive environment. Once the new version has been deployed and tested, you switch traffic from the active environment to the inactive environment. This makes the new version of the application available to users without any downtime. Keep the old environment running for fast rollback until the new one is proven, then decommission it or reuse it.
 
 ## What is the "12-Factor App" methodology, and how does it relate to DevOps practices?
 
@@ -554,14 +553,6 @@ There are a number of ways to ensure data consistency in a distributed microserv
 ChatOps is a practice that uses chat tools such as Slack and Microsoft Teams to streamline DevOps communication and collaboration. ChatOps tools can be used to automate tasks, share information, and collaborate on projects.
 
 ChatOps can play a valuable role in DevOps communication and collaboration by helping to improve team communication, reduce silos, and increase productivity.
-
-## What is "Blue-Green Infrastructure," and how does it relate to application deployments in DevOps?
-
-Blue-green infrastructure is a deployment strategy that allows you to deploy new versions of applications without any downtime. Blue-green infrastructure works by running two identical production environments, one blue and one green. The blue environment is the production environment that users are currently accessing. The green environment is the staging environment where new versions of applications are deployed.
-
-When you are ready to deploy a new version of an application, you simply switch traffic from the blue environment to the green environment. Once all traffic has been switched to the green environment, you can decommission the blue environment.
-
-Blue-green infrastructure is a popular deployment strategy in DevOps because it allows you to deploy new versions of applications without any downtime.
 
 ## How do you optimize DevOps pipelines for large-scale and complex applications?
 
