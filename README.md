@@ -337,7 +337,7 @@ Canary Deployment is a powerful technique that can help to reduce the risk of de
 
 - **Monitoring tools:** Tools such as Prometheus and Grafana can be used to monitor the performance and reliability of applications and infrastructure.
 - **Logging tools:** Tools such as Grafana Loki, OpenSearch or the Elastic stack can be used to collect and analyze logs from applications and infrastructure.
-- **Alerting tools:** Tools such as PagerDuty and Opsgenie can be used to notify DevOps teams of problems with applications and infrastructure.
+- **Alerting tools:** Tools such as PagerDuty, incident.io or Jira Service Management can be used to notify DevOps teams of problems with applications and infrastructure.
 
 ## Benefits of "Feature Toggles" in DevOps development:
 
