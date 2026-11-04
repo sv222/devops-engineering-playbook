@@ -483,11 +483,11 @@ Note that Terraform has been under the HashiCorp Business Source License (BSL) s
 
 ## What is the role of "Service Mesh" in microservices architectures?
 
-A service mesh is a layer of infrastructure that sits between microservices and provides them with common services such as load balancing, service discovery, and circuit breakers.
+A service mesh is a layer of infrastructure that sits between microservices and provides them with common services such as service discovery, load balancing, mTLS, retries and circuit breaking, and telemetry.
 
 Service meshes are important in microservices architectures because they help to make microservices architectures more reliable and manageable.
 
-Popular meshes include Istio (which offers a sidecar-less ambient mode) and Linkerd; Cilium also provides mesh features using eBPF.
+Popular meshes include Istio, whose sidecar-less ambient mode reached general availability in Istio 1.24, and Linkerd, whose stable releases are now distributed as Buoyant Enterprise for Linkerd, with open-source edge releases. Cilium also provides mesh features using eBPF.
 
 ## What is "Continuous Integration vs. Continuous Delivery vs. Continuous Deployment"?
 
