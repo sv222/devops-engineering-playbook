@@ -499,11 +499,11 @@ Continuous Deployment is the practice of deploying every change that passes auto
 
 ## What is a "Rolling Deployment" strategy, and what are its advantages?
 
-A rolling deployment is a deployment strategy where an application is updated incrementally, replacing old instances with new ones in small batches. Once each batch is verified healthy, the next batch is updated until all instances run the new version.
+A rolling deployment is a deployment strategy where an application is updated incrementally, replacing old instances with new ones in small batches. Once each batch is verified healthy, the next batch is updated until all instances run the new version. In Kubernetes, a Deployment uses the RollingUpdate strategy by default with maxSurge and maxUnavailable both at 25%, and readiness probes gate each step: a new pod must become Ready before old pods are removed.
 
 Rolling deployments have a number of advantages, including:
 
-- Reduced risk: Rolling deployments reduce the risk of deployment failures by deploying changes to a subset of users at a time.
+- Reduced risk: Rolling deployments reduce the risk of deployment failures by replacing instances in batches, so a bad version is caught before every instance is replaced. During the rollout, traffic reaches both the old and new versions.
 - Gradual rollout: Rolling deployments allow you to gradually roll out changes to all users, which can help to reduce the impact of changes on users.
 - Lower infrastructure cost: Rolling deployments update the existing environment in place, so unlike a blue-green deployment they do not require a second, full-size environment.
 
