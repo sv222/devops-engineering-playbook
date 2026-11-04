@@ -88,7 +88,7 @@ Version control is essential in DevOps because it allows teams to work on the sa
 
 ## What are containers, and how do they relate to DevOps?
 
-Containers are a way to package software so that it can be run on any environment. Containers include all of the dependencies that the software needs to run, such as code, libraries, and runtime environments.
+Containers are a way to package software so that it runs the same way across environments. A container bundles the application with its libraries and runtime, but not a kernel. It shares the host kernel, so it runs on any host with a compatible kernel and container runtime (Docker, containerd, Podman).
 
 Containers are popular in DevOps because they make it easy to deploy and manage software. Containers can be deployed to any environment that supports a container runtime such as Docker, and they can be managed at scale with orchestration platforms like Kubernetes.
 
