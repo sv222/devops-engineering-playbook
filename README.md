@@ -422,7 +422,7 @@ Continuous documentation can be achieved by using tools such as documentation ge
 
 There are a number of ways to manage secrets and sensitive data in a DevOps environment, including:
 
-- **Use a secrets manager:** A secrets manager is a tool that can help you to store and manage secrets securely. Examples include HashiCorp Vault (source-available under the Business Source License since 2023; OpenBao is the open-source fork), AWS Secrets Manager, Azure Key Vault and Google Secret Manager. Secrets managers can encrypt secrets and restrict access to secrets to authorized users.
+- **Use a secrets manager:** A secrets manager is a tool that can help you to store and manage secrets securely. Examples include HashiCorp Vault (source-available under the Business Source License since August 2023; OpenBao is the open-source MPL 2.0 fork), AWS Secrets Manager, Azure Key Vault and Google Cloud Secret Manager. Secrets managers can encrypt secrets and restrict access to secrets to authorized users.
 - **Use a secure container registry:** A secure container registry can help you to store and manage container images securely. Secure container registries can encrypt container images and restrict access to container images to authorized users.
 - **Use a cloud platform with security features:** Many cloud platforms offer security features such as encryption and access control. You can use these features to protect your secrets and sensitive data.
 - **Keep secrets out of Git:** Use secret scanning and pre-commit checks, and store encrypted secrets in Git only with a tool such as SOPS.
