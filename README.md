@@ -584,7 +584,7 @@ There are a number of ways to achieve high availability and fault tolerance in a
 
 ## What is "Git Flow," and How Does It Structure the Development Process in DevOps?
 
-Git Flow is a branching model that can be used to structure the development process in DevOps. Git Flow uses a number of branches to manage different stages of the development process, including development, staging, release, and hotfix branches.
+Git Flow is a branching model that can be used to structure the development process in DevOps. Git Flow uses a number of branches to manage different stages of the development process: main for production releases, develop for integration, and feature, release and hotfix branches.
 
 Git Flow is a popular choice for DevOps teams because it helps to streamline the development process and to reduce the risk of conflicts. Git Flow works best for software with scheduled releases; teams that deploy continuously usually prefer trunk-based development with short-lived branches.
 
