@@ -310,7 +310,7 @@ Here is an example of how Canary Deployment might be used in DevOps:
 3. If there are any problems with the new version of the application, the deployment is rolled back.
 4. If the new version of the application is performing well, the deployment is gradually rolled out to all users.
 
-Canary Deployment is a powerful technique that can help to reduce the risk of deploying new software applications. By canary deploying new versions of applications, DevOps teams can ensure that their applications are reliable and performant.
+Canary Deployment is a powerful technique that can help to reduce the risk of deploying new software applications. By canary deploying new versions of applications, DevOps teams can ensure that their applications are reliable and performant. Progressive delivery tools such as Argo Rollouts and Flagger automate this with metric-based analysis and automatic rollback.
 
 ## Key metrics and tools for measuring the success of a DevOps pipeline:
 
