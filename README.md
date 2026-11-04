@@ -317,7 +317,8 @@ Canary Deployment is a powerful technique that can help to reduce the risk of de
 - **Deployment frequency:** How often is new code deployed to production?
 - **Lead time for changes:** How long does it take to make a change to code and deploy it to production?
 - **Change failure rate:** What percentage of changes to code result in a failure?
-- **Mean time to recover from a failure:** How long does it take to recover from a failure in production?
+- **Failed deployment recovery time:** How long does it take to recover from a failed deployment in production?
+- **Deployment rework rate:** What percentage of deployments are unplanned fixes for a production incident?
 
 ### Tools
 
