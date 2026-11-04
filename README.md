@@ -370,15 +370,16 @@ Overall, serverless computing is a valuable tool for DevOps teams that can help 
 
 ## How to perform "A/B Testing" in a DevOps pipeline to evaluate new features:
 
-A/B testing, also known as split testing, is a technique used to compare two versions of a web page or mobile app to determine which one performs better. This can be used to evaluate new features by deploying the new feature to a small subset of users and then comparing the performance of the new feature to the performance of the existing feature.
+A/B testing, also known as split testing, is a technique used to compare two versions of a web page or mobile app to determine which one performs better. This can be used to evaluate new features by showing the new feature to one group of users and comparing their results with a control group.
 
 To perform A/B testing in a DevOps pipeline, you can follow these steps:
 
-1. Create two versions of your application: one version with the new feature and one version without the new feature.
-2. Deploy the two versions of your application to production using a tool such as Kubernetes.
-3. Route a small percentage of users to the version of the application with the new feature.
-4. Monitor the performance of the two versions of the application using a tool such as Prometheus.
-5. After a period of time, compare the performance of the two versions of the application and decide whether to roll out the new feature to all users.
+1. Define the success metric and the sample size before the test starts.
+2. Build the new feature behind a feature flag or experiment platform, so the control and variant ship in the same release.
+3. Assign each user to a variant consistently, for example by hashing the user ID into buckets, so the same user always sees the same version.
+4. Monitor ops health (errors, latency) of each variant with a tool such as Prometheus, and track product metrics in your analytics or experimentation tooling.
+5. Run the test until the planned sample size is reached and the result is statistically significant.
+6. Roll out the winning variant to all users, or turn the flag off.
 
 ## Explain the concept of "Log Aggregation" in DevOps:
 
