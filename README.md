@@ -237,7 +237,7 @@ Jenkins and Travis CI are both continuous integration (CI) tools, but they have 
 - Cloud-based
 - Easy to use
 - Limited customization options
-- Largely legacy today: no unlimited free builds for open-source projects (only a limited trial allotment), and many projects have moved to GitHub Actions
+- Largely legacy today: it no longer offers unlimited free builds for open-source projects, and many projects have moved to GitHub Actions
 
 Which CI tool is better for you depends on your specific needs.
 
@@ -545,6 +545,7 @@ There are a number of ways to optimize DevOps pipelines for large-scale and comp
 For general practices see [How do you manage secrets and sensitive data in a DevOps environment?](#how-do-you-manage-secrets-and-sensitive-data-in-a-devops-environment).
 
 There are a number of ways to manage secrets and sensitive data in a containerized environment using Docker. Some common approaches include:
+
 - **Use Docker or Compose secrets and BuildKit secret mounts:** Pass secrets at runtime as files via Docker secrets (Swarm) or Compose secrets, and use `RUN --mount=type=secret` at build time instead of `ENV` or `ARG`, which can leak into image layers and history.
 - **On Kubernetes, sync from an external store:** Use a tool such as the External Secrets Operator or the Secrets Store CSI Driver instead of committing Secret manifests.
 
@@ -569,7 +570,6 @@ There are a number of ways to achieve high availability and fault tolerance in a
 
 - **Use a load balancer:** A load balancer can distribute traffic across multiple servers, which can help to improve availability and performance.
 - **Use a container orchestration platform:** A container orchestration platform such as Kubernetes can help you to manage and deploy your applications in a scalable and fault-tolerant way.
-- **Use a cloud platform:** A cloud platform such as AWS, Azure, or Google Cloud Platform can provide you with a highly available and fault-tolerant infrastructure for your DevOps architecture.
 - **Spread across availability zones:** Run across multiple availability zones with no single point of failure.
 - **Use health checks and autoscaling:** Health checks detect failed instances, and autoscaling replaces and adds capacity.
 - **Define SLOs:** Service level objectives set the availability target you design and monitor against.
