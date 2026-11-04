@@ -603,7 +603,7 @@ IaC Testing, or Infrastructure as Code Testing, is the process of testing infras
 
 IaC Testing is important in DevOps because it can help to ensure the reliability of infrastructure deployments. By testing infrastructure code before it is deployed, DevOps teams can identify and fix any errors that could cause problems in production.
 
-Common tools include `terraform test` / `tofu test`, Terratest, static analysis and policy checks with Checkov, Trivy or Conftest (Open Policy Agent), and linters such as tflint.
+Common tools include `terraform test` (generally available from Terraform 1.6) and `tofu test` (OpenTofu 1.6 and later), Terratest, static analysis and policy checks with Checkov, Trivy or Conftest (Open Policy Agent), and linters such as tflint.
 
 ## Explain the concept of "Docker Compose" and its use in managing multi-container Docker applications.
 
