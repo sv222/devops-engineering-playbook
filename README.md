@@ -35,40 +35,39 @@ A practical reference on CI/CD, infrastructure automation, containers and Kubern
 29. [What is "Chaos Engineering," and how does it relate to DevOps practices?](#what-is-chaos-engineering-and-how-does-it-relate-to-devops-practices)
 30. [Explain the importance of "Serverless Computing" in DevOps:](#explain-the-importance-of-serverless-computing-in-devops)
 31. [How to perform "A/B Testing" in a DevOps pipeline to evaluate new features:](#how-to-perform-ab-testing-in-a-devops-pipeline-to-evaluate-new-features)
-32. [What is "Immutable Server," and how does it enhance reliability in DevOps?](#what-is-immutable-server-and-how-does-it-enhance-reliability-in-devops)
-33. [Explain the concept of "Log Aggregation" in DevOps:](#explain-the-concept-of-log-aggregation-in-devops)
-34. [How to ensure that your DevOps pipeline is compliant with security and regulatory requirements:](#how-to-ensure-that-your-devops-pipeline-is-compliant-with-security-and-regulatory-requirements)
-35. [What is "Serverless Orchestration," and how does it impact application development in DevOps?](#what-is-serverless-orchestration-and-how-does-it-impact-application-development-in-devops)
-36. [Explain the concept of "Trunk-Based Development" and how it differs from feature branching in source control:](#explain-the-concept-of-trunk-based-development-and-how-it-differs-from-feature-branching-in-source-control)
-37. [What is the importance of "Continuous Documentation" in DevOps?](#what-is-the-importance-of-continuous-documentation-in-devops)
-38. [How do you manage secrets and sensitive data in a DevOps environment?](#how-do-you-manage-secrets-and-sensitive-data-in-a-devops-environment)
-39. [What are "Immutable Artifacts," and how do they improve deployment reliability in DevOps?](#what-are-immutable-artifacts-and-how-do-they-improve-deployment-reliability-in-devops)
-40. [How does "Self-Healing Infrastructure" work in a DevOps environment?](#how-does-self-healing-infrastructure-work-in-a-devops-environment)
-41. [Explain the concept of "Continuous Deployment" and its benefits in DevOps.](#explain-the-concept-of-continuous-deployment-and-its-benefits-in-devops)
-42. [What are the key principles of "Continuous Compliance," and how do they ensure security in DevOps?](#what-are-the-key-principles-of-continuous-compliance-and-how-do-they-ensure-security-in-devops)
-43. [How does "Feature Flag Management" enable controlled feature releases in DevOps applications?](#how-does-feature-flag-management-enable-controlled-feature-releases-in-devops-applications)
-44. [Explain the concept of "Dependency Management" in DevOps.](#explain-the-concept-of-dependency-management-in-devops)
-45. [How do you implement "Infrastructure as Code" for serverless architectures?](#how-do-you-implement-infrastructure-as-code-for-serverless-architectures)
-46. [What is the role of "Service Mesh" in microservices architectures?](#what-is-the-role-of-service-mesh-in-microservices-architectures)
-47. [What is "Continuous Integration vs. Continuous Delivery vs. Continuous Deployment"?](#what-is-continuous-integration-vs-continuous-delivery-vs-continuous-deployment)
-48. [How do you manage database schema changes in a DevOps pipeline?](#how-do-you-manage-database-schema-changes-in-a-devops-pipeline)
-49. [What is a "Rolling Deployment" strategy, and what are its advantages?](#what-is-a-rolling-deployment-strategy-and-what-are-its-advantages)
-50. [How do you handle data migration in a DevOps environment?](#how-do-you-handle-data-migration-in-a-devops-environment)
-51. [Explain the concept of "Serverless Databases" in DevOps applications.](#explain-the-concept-of-serverless-databases-in-devops-applications)
-52. [What is "Serverless Monitoring," and how does it differ from traditional application monitoring?](#what-is-serverless-monitoring-and-how-does-it-differ-from-traditional-application-monitoring)
-53. [How do you ensure data consistency in a distributed microservices architecture?](#how-do-you-ensure-data-consistency-in-a-distributed-microservices-architecture)
-54. [Explain the role of "ChatOps" in DevOps communication and collaboration.](#explain-the-role-of-chatops-in-devops-communication-and-collaboration)
-55. [What is "Blue-Green Infrastructure," and how does it relate to application deployments in DevOps?](#what-is-blue-green-infrastructure-and-how-does-it-relate-to-application-deployments-in-devops)
-56. [How do you optimize DevOps pipelines for large-scale and complex applications?](#how-do-you-optimize-devops-pipelines-for-large-scale-and-complex-applications)
-57. [Explain the concept of "Environment Drift" and its impact on DevOps environments.](#explain-the-concept-of-environment-drift-and-its-impact-on-devops-environments)
-58. [How do you manage secrets and sensitive data in a containerized environment using Docker?](#how-do-you-manage-secrets-and-sensitive-data-in-a-containerized-environment-using-docker)
-59. [Benefits of Observability in Microservices Architecture](#benefits-of-observability-in-microservices-architecture)
-60. [How to Achieve High Availability and Fault Tolerance in a DevOps Architecture](#how-to-achieve-high-availability-and-fault-tolerance-in-a-devops-architecture)
-61. [What is "Continuous Integration" in the DevOps Lifecycle?](#what-is-continuous-integration-in-the-devops-lifecycle)
-62. [What is "Git Flow," and How Does It Structure the Development Process in DevOps?](#what-is-git-flow-and-how-does-it-structure-the-development-process-in-devops)
-63. [What Are the Key Considerations for Creating a Disaster Recovery Plan in a DevOps Environment?](#what-are-the-key-considerations-for-creating-a-disaster-recovery-plan-in-a-devops-environment)
-64. [What is "IaC Testing," and how does it ensure the reliability of infrastructure deployments in DevOps?](#what-is-iac-testing-and-how-does-it-ensure-the-reliability-of-infrastructure-deployments-in-devops)
-65. [Explain the concept of "Docker Compose" and its use in managing multi-container Docker applications.](#explain-the-concept-of-docker-compose-and-its-use-in-managing-multi-container-docker-applications)
+32. [Explain the concept of "Log Aggregation" in DevOps:](#explain-the-concept-of-log-aggregation-in-devops)
+33. [How to ensure that your DevOps pipeline is compliant with security and regulatory requirements:](#how-to-ensure-that-your-devops-pipeline-is-compliant-with-security-and-regulatory-requirements)
+34. [What is "Serverless Orchestration," and how does it impact application development in DevOps?](#what-is-serverless-orchestration-and-how-does-it-impact-application-development-in-devops)
+35. [Explain the concept of "Trunk-Based Development" and how it differs from feature branching in source control:](#explain-the-concept-of-trunk-based-development-and-how-it-differs-from-feature-branching-in-source-control)
+36. [What is the importance of "Continuous Documentation" in DevOps?](#what-is-the-importance-of-continuous-documentation-in-devops)
+37. [How do you manage secrets and sensitive data in a DevOps environment?](#how-do-you-manage-secrets-and-sensitive-data-in-a-devops-environment)
+38. [What are "Immutable Artifacts," and how do they improve deployment reliability in DevOps?](#what-are-immutable-artifacts-and-how-do-they-improve-deployment-reliability-in-devops)
+39. [How does "Self-Healing Infrastructure" work in a DevOps environment?](#how-does-self-healing-infrastructure-work-in-a-devops-environment)
+40. [Explain the concept of "Continuous Deployment" and its benefits in DevOps.](#explain-the-concept-of-continuous-deployment-and-its-benefits-in-devops)
+41. [What are the key principles of "Continuous Compliance," and how do they ensure security in DevOps?](#what-are-the-key-principles-of-continuous-compliance-and-how-do-they-ensure-security-in-devops)
+42. [How does "Feature Flag Management" enable controlled feature releases in DevOps applications?](#how-does-feature-flag-management-enable-controlled-feature-releases-in-devops-applications)
+43. [Explain the concept of "Dependency Management" in DevOps.](#explain-the-concept-of-dependency-management-in-devops)
+44. [How do you implement "Infrastructure as Code" for serverless architectures?](#how-do-you-implement-infrastructure-as-code-for-serverless-architectures)
+45. [What is the role of "Service Mesh" in microservices architectures?](#what-is-the-role-of-service-mesh-in-microservices-architectures)
+46. [What is "Continuous Integration vs. Continuous Delivery vs. Continuous Deployment"?](#what-is-continuous-integration-vs-continuous-delivery-vs-continuous-deployment)
+47. [How do you manage database schema changes in a DevOps pipeline?](#how-do-you-manage-database-schema-changes-in-a-devops-pipeline)
+48. [What is a "Rolling Deployment" strategy, and what are its advantages?](#what-is-a-rolling-deployment-strategy-and-what-are-its-advantages)
+49. [How do you handle data migration in a DevOps environment?](#how-do-you-handle-data-migration-in-a-devops-environment)
+50. [Explain the concept of "Serverless Databases" in DevOps applications.](#explain-the-concept-of-serverless-databases-in-devops-applications)
+51. [What is "Serverless Monitoring," and how does it differ from traditional application monitoring?](#what-is-serverless-monitoring-and-how-does-it-differ-from-traditional-application-monitoring)
+52. [How do you ensure data consistency in a distributed microservices architecture?](#how-do-you-ensure-data-consistency-in-a-distributed-microservices-architecture)
+53. [Explain the role of "ChatOps" in DevOps communication and collaboration.](#explain-the-role-of-chatops-in-devops-communication-and-collaboration)
+54. [What is "Blue-Green Infrastructure," and how does it relate to application deployments in DevOps?](#what-is-blue-green-infrastructure-and-how-does-it-relate-to-application-deployments-in-devops)
+55. [How do you optimize DevOps pipelines for large-scale and complex applications?](#how-do-you-optimize-devops-pipelines-for-large-scale-and-complex-applications)
+56. [Explain the concept of "Environment Drift" and its impact on DevOps environments.](#explain-the-concept-of-environment-drift-and-its-impact-on-devops-environments)
+57. [How do you manage secrets and sensitive data in a containerized environment using Docker?](#how-do-you-manage-secrets-and-sensitive-data-in-a-containerized-environment-using-docker)
+58. [Benefits of Observability in Microservices Architecture](#benefits-of-observability-in-microservices-architecture)
+59. [How to Achieve High Availability and Fault Tolerance in a DevOps Architecture](#how-to-achieve-high-availability-and-fault-tolerance-in-a-devops-architecture)
+60. [What is "Continuous Integration" in the DevOps Lifecycle?](#what-is-continuous-integration-in-the-devops-lifecycle)
+61. [What is "Git Flow," and How Does It Structure the Development Process in DevOps?](#what-is-git-flow-and-how-does-it-structure-the-development-process-in-devops)
+62. [What Are the Key Considerations for Creating a Disaster Recovery Plan in a DevOps Environment?](#what-are-the-key-considerations-for-creating-a-disaster-recovery-plan-in-a-devops-environment)
+63. [What is "IaC Testing," and how does it ensure the reliability of infrastructure deployments in DevOps?](#what-is-iac-testing-and-how-does-it-ensure-the-reliability-of-infrastructure-deployments-in-devops)
+64. [Explain the concept of "Docker Compose" and its use in managing multi-container Docker applications.](#explain-the-concept-of-docker-compose-and-its-use-in-managing-multi-container-docker-applications)
 
 ## What is DevOps, and how does it differ from traditional IT practices?
 
@@ -168,7 +167,7 @@ Some popular DevOps tools include:
 
 ## Explain the concept of "Immutable Infrastructure" and its benefits in DevOps.
 
-Immutable Infrastructure is a practice of treating infrastructure as code and deploying it in a way that makes it immutable. This means that once infrastructure is deployed, it is not changed. Instead, new infrastructure is deployed with the desired changes and the old infrastructure is destroyed.
+Immutable Infrastructure is a practice of treating infrastructure as code and deploying it in a way that makes it immutable. This means that once infrastructure is deployed, it is not changed. Instead, new infrastructure is deployed with the desired changes and the old infrastructure is destroyed. An immutable server or image is built once and replaced, never patched in place; examples include machine images and container images.
 
 Immutable Infrastructure offers a number of benefits in DevOps, including:
 
@@ -381,12 +380,6 @@ To perform A/B testing in a DevOps pipeline, you can follow these steps:
 3. Route a small percentage of users to the version of the application with the new feature.
 4. Monitor the performance of the two versions of the application using a tool such as Prometheus.
 5. After a period of time, compare the performance of the two versions of the application and decide whether to roll out the new feature to all users.
-
-## What is "Immutable Server," and how does it enhance reliability in DevOps?
-
-An immutable server is a server that is configured once and then never changed. This means that any changes to the server must be made by deploying a new server with the desired configuration.
-
-Immutable servers enhance reliability in DevOps by reducing the risk of errors caused by manual changes to servers. Immutable servers also make it easier to scale infrastructure up or down by deploying new servers with the desired configuration.
 
 ## Explain the concept of "Log Aggregation" in DevOps:
 
