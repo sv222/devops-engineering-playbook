@@ -515,9 +515,9 @@ Another approach is to use a custom data migration script. This approach can be 
 
 ## Explain the concept of "Serverless Databases" in DevOps applications.
 
-Serverless databases are databases that are managed by a cloud provider. This means that the cloud provider is responsible for managing the infrastructure and scaling the database.
+Serverless databases are managed databases whose capacity scales automatically with load, often down to zero when idle, and whose billing follows actual usage rather than provisioned capacity. Examples include Amazon Aurora Serverless v2, Amazon DynamoDB on-demand, Azure SQL Database serverless, Azure Cosmos DB serverless and Neon for PostgreSQL.
 
-Serverless databases are popular in DevOps applications because they can help to reduce the operational overhead of managing databases.
+Serverless databases reduce operational overhead in DevOps applications. The trade-offs are resume latency after an idle pause (a cold start) and connection limits that depend on the current capacity.
 
 ## What is "Serverless Monitoring," and how does it differ from traditional application monitoring?
 
