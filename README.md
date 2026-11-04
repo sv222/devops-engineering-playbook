@@ -45,28 +45,27 @@ A practical reference on CI/CD, infrastructure automation, containers and Kubern
 39. [How does "Self-Healing Infrastructure" work in a DevOps environment?](#how-does-self-healing-infrastructure-work-in-a-devops-environment)
 40. [Explain the concept of "Continuous Deployment" and its benefits in DevOps.](#explain-the-concept-of-continuous-deployment-and-its-benefits-in-devops)
 41. [What are the key principles of "Continuous Compliance," and how do they ensure security in DevOps?](#what-are-the-key-principles-of-continuous-compliance-and-how-do-they-ensure-security-in-devops)
-42. [How does "Feature Flag Management" enable controlled feature releases in DevOps applications?](#how-does-feature-flag-management-enable-controlled-feature-releases-in-devops-applications)
-43. [Explain the concept of "Dependency Management" in DevOps.](#explain-the-concept-of-dependency-management-in-devops)
-44. [How do you implement "Infrastructure as Code" for serverless architectures?](#how-do-you-implement-infrastructure-as-code-for-serverless-architectures)
-45. [What is the role of "Service Mesh" in microservices architectures?](#what-is-the-role-of-service-mesh-in-microservices-architectures)
-46. [What is "Continuous Integration vs. Continuous Delivery vs. Continuous Deployment"?](#what-is-continuous-integration-vs-continuous-delivery-vs-continuous-deployment)
-47. [How do you manage database schema changes in a DevOps pipeline?](#how-do-you-manage-database-schema-changes-in-a-devops-pipeline)
-48. [What is a "Rolling Deployment" strategy, and what are its advantages?](#what-is-a-rolling-deployment-strategy-and-what-are-its-advantages)
-49. [How do you handle data migration in a DevOps environment?](#how-do-you-handle-data-migration-in-a-devops-environment)
-50. [Explain the concept of "Serverless Databases" in DevOps applications.](#explain-the-concept-of-serverless-databases-in-devops-applications)
-51. [What is "Serverless Monitoring," and how does it differ from traditional application monitoring?](#what-is-serverless-monitoring-and-how-does-it-differ-from-traditional-application-monitoring)
-52. [How do you ensure data consistency in a distributed microservices architecture?](#how-do-you-ensure-data-consistency-in-a-distributed-microservices-architecture)
-53. [Explain the role of "ChatOps" in DevOps communication and collaboration.](#explain-the-role-of-chatops-in-devops-communication-and-collaboration)
-54. [How do you optimize DevOps pipelines for large-scale and complex applications?](#how-do-you-optimize-devops-pipelines-for-large-scale-and-complex-applications)
-55. [Explain the concept of "Environment Drift" and its impact on DevOps environments.](#explain-the-concept-of-environment-drift-and-its-impact-on-devops-environments)
-56. [How do you manage secrets and sensitive data in a containerized environment using Docker?](#how-do-you-manage-secrets-and-sensitive-data-in-a-containerized-environment-using-docker)
-57. [Benefits of Observability in Microservices Architecture](#benefits-of-observability-in-microservices-architecture)
-58. [How to Achieve High Availability and Fault Tolerance in a DevOps Architecture](#how-to-achieve-high-availability-and-fault-tolerance-in-a-devops-architecture)
-59. [What is "Continuous Integration" in the DevOps Lifecycle?](#what-is-continuous-integration-in-the-devops-lifecycle)
-60. [What is "Git Flow," and How Does It Structure the Development Process in DevOps?](#what-is-git-flow-and-how-does-it-structure-the-development-process-in-devops)
-61. [What Are the Key Considerations for Creating a Disaster Recovery Plan in a DevOps Environment?](#what-are-the-key-considerations-for-creating-a-disaster-recovery-plan-in-a-devops-environment)
-62. [What is "IaC Testing," and how does it ensure the reliability of infrastructure deployments in DevOps?](#what-is-iac-testing-and-how-does-it-ensure-the-reliability-of-infrastructure-deployments-in-devops)
-63. [Explain the concept of "Docker Compose" and its use in managing multi-container Docker applications.](#explain-the-concept-of-docker-compose-and-its-use-in-managing-multi-container-docker-applications)
+42. [Explain the concept of "Dependency Management" in DevOps.](#explain-the-concept-of-dependency-management-in-devops)
+43. [How do you implement "Infrastructure as Code" for serverless architectures?](#how-do-you-implement-infrastructure-as-code-for-serverless-architectures)
+44. [What is the role of "Service Mesh" in microservices architectures?](#what-is-the-role-of-service-mesh-in-microservices-architectures)
+45. [What is "Continuous Integration vs. Continuous Delivery vs. Continuous Deployment"?](#what-is-continuous-integration-vs-continuous-delivery-vs-continuous-deployment)
+46. [How do you manage database schema changes in a DevOps pipeline?](#how-do-you-manage-database-schema-changes-in-a-devops-pipeline)
+47. [What is a "Rolling Deployment" strategy, and what are its advantages?](#what-is-a-rolling-deployment-strategy-and-what-are-its-advantages)
+48. [How do you handle data migration in a DevOps environment?](#how-do-you-handle-data-migration-in-a-devops-environment)
+49. [Explain the concept of "Serverless Databases" in DevOps applications.](#explain-the-concept-of-serverless-databases-in-devops-applications)
+50. [What is "Serverless Monitoring," and how does it differ from traditional application monitoring?](#what-is-serverless-monitoring-and-how-does-it-differ-from-traditional-application-monitoring)
+51. [How do you ensure data consistency in a distributed microservices architecture?](#how-do-you-ensure-data-consistency-in-a-distributed-microservices-architecture)
+52. [Explain the role of "ChatOps" in DevOps communication and collaboration.](#explain-the-role-of-chatops-in-devops-communication-and-collaboration)
+53. [How do you optimize DevOps pipelines for large-scale and complex applications?](#how-do-you-optimize-devops-pipelines-for-large-scale-and-complex-applications)
+54. [Explain the concept of "Environment Drift" and its impact on DevOps environments.](#explain-the-concept-of-environment-drift-and-its-impact-on-devops-environments)
+55. [How do you manage secrets and sensitive data in a containerized environment using Docker?](#how-do-you-manage-secrets-and-sensitive-data-in-a-containerized-environment-using-docker)
+56. [Benefits of Observability in Microservices Architecture](#benefits-of-observability-in-microservices-architecture)
+57. [How to Achieve High Availability and Fault Tolerance in a DevOps Architecture](#how-to-achieve-high-availability-and-fault-tolerance-in-a-devops-architecture)
+58. [What is "Continuous Integration" in the DevOps Lifecycle?](#what-is-continuous-integration-in-the-devops-lifecycle)
+59. [What is "Git Flow," and How Does It Structure the Development Process in DevOps?](#what-is-git-flow-and-how-does-it-structure-the-development-process-in-devops)
+60. [What Are the Key Considerations for Creating a Disaster Recovery Plan in a DevOps Environment?](#what-are-the-key-considerations-for-creating-a-disaster-recovery-plan-in-a-devops-environment)
+61. [What is "IaC Testing," and how does it ensure the reliability of infrastructure deployments in DevOps?](#what-is-iac-testing-and-how-does-it-ensure-the-reliability-of-infrastructure-deployments-in-devops)
+62. [Explain the concept of "Docker Compose" and its use in managing multi-container Docker applications.](#explain-the-concept-of-docker-compose-and-its-use-in-managing-multi-container-docker-applications)
 
 ## What is DevOps, and how does it differ from traditional IT practices?
 
@@ -338,6 +337,8 @@ Feature toggles are a software development technique that allows developers to t
 
 Feature toggles can be a valuable tool for DevOps teams because they can help to improve the quality and reliability of software applications.
 
+Releasing a feature to a subset of users first lowers release risk and lets you gather feedback before the full rollout. OpenFeature, a CNCF project, defines a vendor-neutral API for feature flags so you can switch flag providers without changing application code.
+
 ## How to handle database changes in a DevOps pipeline while minimizing downtime:
 
 There are a number of ways to handle database changes in a DevOps pipeline while minimizing downtime, including:
@@ -465,12 +466,6 @@ The key principles of continuous compliance are:
 - **Keep evidence as code:** Store policies as code (for example with Open Policy Agent) and keep signed build provenance and SBOMs as audit evidence.
 
 Continuous compliance can help to ensure security in DevOps by identifying and fixing security vulnerabilities early in the development lifecycle and by continuously monitoring and enforcing compliance requirements.
-
-## How does "Feature Flag Management" enable controlled feature releases in DevOps applications?
-
-Feature flag management is the practice of using feature flags to control when features are released to users. Feature flags are switches that can be used to turn features on and off without deploying new code.
-
-Feature flag management enables controlled feature releases in DevOps applications by allowing developers to release features to a subset of users before releasing them to all users. This can help to reduce the risk of releasing new features and to gather feedback from users before releasing features to all users. OpenFeature, a CNCF project, defines a vendor-neutral API for feature flags so you can switch flag providers without changing application code.
 
 ## Explain the concept of "Dependency Management" in DevOps.
 
