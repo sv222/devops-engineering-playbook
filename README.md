@@ -533,9 +533,9 @@ Serverless monitoring is the practice of monitoring serverless applications. Bec
 
 There are a number of ways to ensure data consistency in a distributed microservices architecture. Some common approaches include:
 
-- **Event-driven architecture:** In an event-driven architecture, microservices communicate with each other by publishing and subscribing to events. This can help to ensure data consistency by ensuring that all microservices are aware of all changes to data.
-- **Sagas:** Sagas are a type of distributed transaction that can be used to ensure data consistency in complex microservices architectures. Sagas work by coordinating a series of local transactions across multiple microservices.
-- **Database replication:** Database replication can be used to ensure data consistency by replicating data across multiple databases. This can help to improve data availability and reliability, and it can also help to improve performance by distributing the load across multiple databases.
+- **Event-driven architecture:** In an event-driven architecture, microservices communicate by publishing and subscribing to events. This gives eventual consistency, not immediate consistency, so pair it with a transactional outbox so events are published reliably, and idempotent consumers so duplicate events are safe.
+- **Sagas:** A saga is a sequence of local transactions, one per service, where each step has a compensating action that undoes it if a later step fails.
+- **Accept eventual consistency where possible:** Keep strong consistency inside one service's own database. Each service owns its data, so do not share tables across services.
 
 ## Explain the role of "ChatOps" in DevOps communication and collaboration.
 
