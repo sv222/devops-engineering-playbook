@@ -444,7 +444,7 @@ Self-healing infrastructure can help to improve the reliability of DevOps enviro
 
 ## Explain the concept of "Continuous Deployment" and its benefits in DevOps.
 
-Continuous deployment is the practice of deploying changes to production as soon as they are ready. This is achieved by automating the deployment process and by using tools such as feature flags to control when features are released to users.
+Continuous deployment is the practice of deploying every change that passes automated checks to production without manual approval. This is achieved by automating the deployment process and by using tools such as feature flags to control when features are released to users.
 
 Continuous deployment offers a number of benefits in DevOps, including:
 
