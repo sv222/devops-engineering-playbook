@@ -479,7 +479,7 @@ There are a number of ways to implement Infrastructure as Code (IaC) for serverl
 
 Another approach is to use a third-party IaC tool. For example, Terraform, Pulumi, and the Serverless Framework are all popular tools that can define and manage serverless architectures.
 
-Note that Terraform has been under the HashiCorp Business Source License (BSL) since August 2023 rather than an open-source license. OpenTofu is the open-source fork of Terraform, hosted by the Linux Foundation, and is largely a drop-in replacement for existing Terraform configurations. Check the license terms of your IaC tooling when you choose it.
+Note that Terraform has been under the HashiCorp Business Source License (BSL) since August 2023 rather than an open-source license. OpenTofu is the open-source fork of Terraform, accepted as a CNCF Sandbox project in April 2025, and is largely a drop-in replacement for existing Terraform configurations. The Serverless Framework v4 CLI is free for organizations with annual revenue of $2M or less; larger organizations need a paid subscription. Check the license terms of your IaC tooling when you choose it.
 
 ## What is the role of "Service Mesh" in microservices architectures?
 
