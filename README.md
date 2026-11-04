@@ -297,8 +297,6 @@ There are a number of ways to ensure the security of Docker containers in a DevO
 
 Canary Deployment is a type of deployment strategy that deploys a new version of a software application to a small subset of users and then gradually rolls out the new version to all users over time. This allows you to monitor the performance and reliability of the new version of the application before it is rolled out to all users.
 
-Canary Deployment is a useful technique for reducing the risk of deploying new software applications. By canary deploying a new version of an application, you can identify and fix any problems with the new version before it is rolled out to all of your users.
-
 Here is an example of how Canary Deployment might be used in DevOps:
 
 1. A new version of an application is deployed to a small subset of users, such as 1% of users.
@@ -306,7 +304,7 @@ Here is an example of how Canary Deployment might be used in DevOps:
 3. If there are any problems with the new version of the application, the deployment is rolled back.
 4. If the new version of the application is performing well, the deployment is gradually rolled out to all users.
 
-Canary Deployment is a powerful technique that can help to reduce the risk of deploying new software applications. By canary deploying new versions of applications, DevOps teams can ensure that their applications are reliable and performant. Progressive delivery tools such as Argo Rollouts and Flagger automate this with metric-based analysis and automatic rollback.
+Progressive delivery tools such as Argo Rollouts and Flagger automate canary releases with metric-based analysis and automatic rollback.
 
 ## Key metrics and tools for measuring the success of a DevOps pipeline:
 
