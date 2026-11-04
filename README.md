@@ -597,7 +597,8 @@ There are a number of key considerations for creating a disaster recovery plan i
 - **Identify your critical systems:** The first step is to identify your critical systems. These are the systems that are essential to the operation of your business.
 - **Assess your risks:** Once you have identified your critical systems, you need to assess the risks to those systems. This includes identifying potential threats and vulnerabilities.
 - **Develop a recovery plan:** Once you have assessed your risks, you need to develop a recovery plan. This plan should outline the steps that you will take to recover your critical systems in the event of a disaster.
-- **Test your recovery plan:** It is important to test your recovery plan regularly to ensure that it is effective. This will help you to identify any gaps in your plan and to make necessary adjustments.
+- **Set RTO and RPO:** The recovery time objective (RTO) is the maximum acceptable downtime and the recovery point objective (RPO) is the maximum acceptable data loss; these targets drive the plan.
+- **Test your recovery plan:** It is important to test your recovery plan regularly to ensure that it is effective. This will help you to identify any gaps in your plan and to make necessary adjustments. A backup only counts once a restore has been tested.
 
 ## What is "IaC Testing," and how does it ensure the reliability of infrastructure deployments in DevOps?
 
