@@ -119,6 +119,7 @@ Monitoring and troubleshooting applications in a DevOps environment typically in
 - Application performance monitoring (APM): APM tools collect data about the performance of applications, such as response times and error rates.
 - Logging and analytics: Logging and analytics tools collect and analyze data from applications and infrastructure. This data can be used to identify and troubleshoot problems.
 - Alerting: Alerting systems notify you when problems occur with applications or infrastructure.
+- Distributed tracing: Tracing follows a single request across services. Metrics, logs and traces are the three observability signals, and OpenTelemetry is the common instrumentation standard.
 
 By using a combination of monitoring, troubleshooting, and alerting tools and techniques, DevOps teams can quickly identify and fix problems with their applications.
 
