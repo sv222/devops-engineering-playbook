@@ -110,7 +110,7 @@ Configuration management is important in DevOps because it helps to ensure that 
 
 Microservices are a software development approach that breaks down an application into small, independently deployable services. Each microservice is responsible for a specific task, and microservices communicate with each other through well-defined APIs.
 
-Microservices are popular in DevOps architecture because they make it easy to develop, deploy, and maintain software. Microservices are also very scalable, as new microservices can be added or removed as needed.
+Microservices are popular in DevOps architecture because they make it easy to develop, deploy, and maintain software. Microservices are also very scalable, as new microservices can be added or removed as needed. The trade-off is more operational complexity, such as networking, tracing, data consistency and many pipelines to run.
 
 ## How do you monitor and troubleshoot applications in a DevOps environment?
 
